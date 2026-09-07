@@ -1,0 +1,36 @@
+DomainID,label,labelUrl
+79,Agriculture et élevage,agriculture-et-elevage
+80,Environnement,environnement
+81,"Maintenance, entretien et nettoyage",maintenance-entretien-et-nettoyage
+82,Culture et patrimoine,culture-et-patrimoine
+83,Industrie - Alimentaire,industrie-alimentaire
+84,Industries,industries
+85,Santé,sante
+86,Service à la personne,service-a-la-personne
+87,"Artisanat d'art, audiovisuel et spectacle",artisanat-art-audiovisuel-et-spectacle
+88,Commerce et distribution,commerce-et-distribution
+89,Industrie - Papier et imprimerie,industrie-papier-et-imprimerie
+90,Industrie - Textile et mode,industrie-textile-et-mode
+91,"Finance, banque et assurance",finance-banque-et-assurance
+92,Immobilier,immobilier
+93,"Sport, animation et loisir",sport-animation-et-loisir
+94,Communication et marketing,communication-et-marketing
+95,Automobile,automobile
+96,Informatique et télécommunication,informatique-et-telecommunication
+97,Édition,edition
+98,"Architecture, études et normes",architecture-etudes-et-normes
+99,Bâtiment et travaux publics (BTP),batiment-et-travaux-publics-btp
+100,Industrie - Métallurgie,industrie-metallurgie
+101,Tourisme,tourisme
+102,Hôtellerie et restauration,hotellerie-et-restauration
+103,Gestion administrative et ressources humaines,gestion-administrative-et-ressources-humaines
+104,Industrie - Électronique,industrie-electronique
+105,Recherche,recherche
+106,Industrie - Chimie,industrie-chimie
+107,Industrie - Bois,industrie-bois
+108,Énergie,energie
+109,Social,social
+110,Activités juridiques et comptables,activites-juridiques-et-comptables
+111,"Service public, défense et sécurité",service-public-defense-et-securite
+112,Enseignement et formation,enseignement-et-formation
+113,Logistique et transport,logistique-et-transport
