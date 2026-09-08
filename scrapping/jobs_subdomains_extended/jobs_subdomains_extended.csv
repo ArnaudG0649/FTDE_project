@@ -1,0 +1,3071 @@
+,romeCode,subDomain
+0,A1101,"Agriculture, sylviculture"
+1,A1102,"Agriculture, sylviculture"
+2,A1201,"Agriculture, sylviculture"
+3,A1202,"Agriculture, sylviculture"
+4,A1202,BTP
+5,A1202,Environnement
+6,A1202,"Élevage, pêche"
+7,A1203,Environnement
+8,A1203,Nettoyage
+9,A1203,Service public
+10,A1203,"Élevage, pêche"
+11,A1204,"Agriculture, sylviculture"
+12,A1204,Culture et patrimoine
+13,A1204,Environnement
+14,A1204,Service public
+15,A1205,"Agriculture, sylviculture"
+16,A1206,Architecture
+17,A1207,"Agriculture, sylviculture"
+18,A1207,BTP
+19,A1207,Environnement
+20,A1208,"Agriculture, sylviculture"
+21,A1208,Animation et loisir
+22,A1208,Nettoyage
+23,A1208,Service public
+24,A1209,"Agriculture, sylviculture"
+25,A1209,Animation et loisir
+26,A1209,Environnement
+27,A1209,Nettoyage
+28,A1210,"Agriculture, sylviculture"
+29,A1210,Industrie - Bois
+30,A1210,Service public
+31,A1211,Nettoyage
+32,A1212,"Agriculture, sylviculture"
+33,A1212,Industrie - Bois
+34,A1212,Service public
+35,A1213,"Agriculture, sylviculture"
+36,A1213,Environnement
+37,A1213,Industrie - Bois
+38,A1213,Service public
+39,A1214,Animation et loisir
+40,A1214,Environnement
+41,A1215,Culture et patrimoine
+42,A1215,Environnement
+43,A1215,Recherche
+44,A1215,Service à la personne
+45,A1215,Tourisme
+46,A1216,Culture et patrimoine
+47,A1216,Environnement
+48,A1216,Service public
+49,A1217,Animation et loisir
+50,A1217,Culture et patrimoine
+51,A1217,Environnement
+52,A1217,Service public
+53,A1218,"Agriculture, sylviculture"
+54,A1218,BTP
+55,A1218,Environnement
+56,A1219,"Agriculture, sylviculture"
+57,A1219,Environnement
+58,A1219,Nettoyage
+59,A1219,Service public
+60,A1220,"Agriculture, sylviculture"
+61,A1220,Animation et loisir
+62,A1220,Service public
+63,A1221,"Agriculture, sylviculture"
+64,A1301,"Agriculture, sylviculture"
+65,A1302,"Agriculture, sylviculture"
+66,A1303,"Agriculture, sylviculture"
+67,A1303,Industrie - Alimentaire
+68,A1303,Recherche
+69,A1303,Service public
+70,A1304,"Agriculture, sylviculture"
+71,A1305,Service public
+72,A1306,Environnement
+73,A1307,"Agriculture, sylviculture"
+74,A1307,Environnement
+75,A1307,Service public
+76,A1308,Soins animaliers
+77,A1308,"Élevage, pêche"
+78,A1309,"Élevage, pêche"
+79,A1310,"Élevage, pêche"
+80,A1311,"Agriculture, sylviculture"
+81,A1311,Environnement
+82,A1311,Service public
+83,A1312,Environnement
+84,A1312,Industries
+85,A1312,Recherche
+86,A1312,Service public
+87,A1312,Énergie
+88,A1313,Environnement
+89,A1313,Industries
+90,A1313,Recherche
+91,A1313,Service public
+92,A1314,"Agriculture, sylviculture"
+93,A1314,Normes
+94,A1314,Recherche
+95,A1314,"Élevage, pêche"
+96,A1315,"Agriculture, sylviculture"
+97,A1315,Environnement
+98,A1315,Service public
+99,A1316,"Agriculture, sylviculture"
+100,A1317,"Agriculture, sylviculture"
+101,A1317,Culture et patrimoine
+102,A1317,Recherche
+103,A1317,Service public
+104,A1318,"Agriculture, sylviculture"
+105,A1318,BTP
+106,A1318,Service public
+107,A1319,"Agriculture, sylviculture"
+108,A1319,Service public
+109,A1320,"Agriculture, sylviculture"
+110,A1320,Environnement
+111,A1320,Recherche
+112,A1320,Service public
+113,A1321,"Agriculture, sylviculture"
+114,A1321,Environnement
+115,A1321,Service public
+116,A1322,"Agriculture, sylviculture"
+117,A1322,BTP
+118,A1322,Culture et patrimoine
+119,A1322,Environnement
+120,A1322,Service public
+121,A1323,"Agriculture, sylviculture"
+122,A1323,Animation et loisir
+123,A1323,Culture et patrimoine
+124,A1323,Environnement
+125,A1323,Service public
+126,A1324,Environnement
+127,A1324,"Élevage, pêche"
+128,A1324,Énergie
+129,A1325,Environnement
+130,A1325,Service public
+131,A1401,"Agriculture, sylviculture"
+132,A1402,"Agriculture, sylviculture"
+133,A1403,"Élevage, pêche"
+134,A1404,"Élevage, pêche"
+135,A1405,"Agriculture, sylviculture"
+136,A1406,"Élevage, pêche"
+137,A1407,"Élevage, pêche"
+138,A1408,"Élevage, pêche"
+139,A1409,"Élevage, pêche"
+140,A1410,"Élevage, pêche"
+141,A1411,"Élevage, pêche"
+142,A1412,Industrie - Alimentaire
+143,A1412,"Élevage, pêche"
+144,A1413,Industrie - Alimentaire
+145,A1414,"Agriculture, sylviculture"
+146,A1415,"Élevage, pêche"
+147,A1416,"Agriculture, sylviculture"
+148,A1416,"Élevage, pêche"
+149,A1417,"Agriculture, sylviculture"
+150,A1418,"Agriculture, sylviculture"
+151,A1419,"Agriculture, sylviculture"
+152,A1419,"Élevage, pêche"
+153,A1420,"Agriculture, sylviculture"
+154,A1421,"Élevage, pêche"
+155,A1422,"Agriculture, sylviculture"
+156,A1422,Industrie - Alimentaire
+157,A1423,"Agriculture, sylviculture"
+158,A1423,Industrie - Alimentaire
+159,A1424,"Élevage, pêche"
+160,A1425,"Élevage, pêche"
+161,A1426,Service à la personne
+162,A1426,"Élevage, pêche"
+163,A1427,"Élevage, pêche"
+164,A1428,"Élevage, pêche"
+165,A1429,"Élevage, pêche"
+166,A1430,"Élevage, pêche"
+167,A1431,"Élevage, pêche"
+168,A1432,"Agriculture, sylviculture"
+169,A1433,"Agriculture, sylviculture"
+170,A1434,"Agriculture, sylviculture"
+171,A1435,"Élevage, pêche"
+172,A1436,"Agriculture, sylviculture"
+173,A1437,"Agriculture, sylviculture"
+174,A1438,"Élevage, pêche"
+175,A1439,"Élevage, pêche"
+176,A1440,"Agriculture, sylviculture"
+177,A1440,Environnement
+178,A1441,"Agriculture, sylviculture"
+179,A1442,"Élevage, pêche"
+180,A1443,Industrie - Alimentaire
+181,A1444,"Agriculture, sylviculture"
+182,A1445,"Élevage, pêche"
+183,A1446,"Agriculture, sylviculture"
+184,A1446,Industrie - Alimentaire
+185,A1447,"Agriculture, sylviculture"
+186,A1447,Commerce de détail
+187,A1447,Service à la personne
+188,A1501,Soins animaliers
+189,A1502,Soins animaliers
+190,A1503,Soins animaliers
+191,A1504,Soins animaliers
+192,A1505,Industries
+193,A1505,Médical
+194,A1505,Recherche
+195,A1505,Soins animaliers
+196,A1506,Soins animaliers
+197,A1507,Soins animaliers
+198,A1508,Animation et loisir
+199,A1508,Spectacle
+200,A1509,Recherche
+201,A1509,Service à la personne
+202,A1509,"Élevage, pêche"
+203,A1510,"Élevage, pêche"
+204,A1511,Service à la personne
+205,A1511,Soins animaliers
+206,A1512,"Agriculture, sylviculture"
+207,A1512,Environnement
+208,A1512,Soins animaliers
+209,A1512,"Élevage, pêche"
+210,B1101,Artisanat d'art
+211,B1102,Artisanat d'art
+212,B1102,Culture et patrimoine
+213,B1102,Second Œuvre
+214,B1103,Artisanat d'art
+215,B1103,BTP
+216,B1104,Artisanat d'art
+217,B1201,Artisanat d'art
+218,B1301,Grande distribution
+219,B1302,Artisanat d'art
+220,B1303,Artisanat d'art
+221,B1303,Industrie - Métallurgie
+222,B1304,Artisanat d'art
+223,B1401,Artisanat d'art
+224,B1402,Imprimerie
+225,B1402,Papier
+226,B1403,Artisanat d'art
+227,B1403,Papier
+228,B1404,Artisanat d'art
+229,B1501,Artisanat d'art
+230,B1502,Artisanat d'art
+231,B1503,Artisanat d'art
+232,B1504,Artisanat d'art
+233,B1505,Artisanat d'art
+234,B1601,Artisanat d'art
+235,B1602,Artisanat d'art
+236,B1603,Industries
+237,B1604,Artisanat d'art
+238,B1604,Industrie - Électronique
+239,B1605,Artisanat d'art
+240,B1605,Industrie - Métallurgie
+241,B1606,Artisanat d'art
+242,B1606,Industrie - Métallurgie
+243,B1607,Artisanat d'art
+244,B1607,Industries
+245,B1608,Artisanat d'art
+246,B1609,Artisanat d'art
+247,B1609,Industrie - Métallurgie
+248,B1610,Artisanat d'art
+249,B1610,Industrie - Métallurgie
+250,B1611,Artisanat d'art
+251,B1611,Industries
+252,B1612,Artisanat d'art
+253,B1612,Industries
+254,B1613,Artisanat d'art
+255,B1613,Industrie - Métallurgie
+256,B1614,Artisanat d'art
+257,B1614,Industrie - Métallurgie
+258,B1615,Artisanat d'art
+259,B1615,Industrie - Métallurgie
+260,B1616,Artisanat d'art
+261,B1617,Artisanat d'art
+262,B1618,Artisanat d'art
+263,B1701,Artisanat d'art
+264,B1702,Artisanat d'art
+265,B1702,Recherche
+266,B1801,Industrie - Textile et mode
+267,B1802,Artisanat d'art
+268,B1802,Industrie - Textile et mode
+269,B1803,Artisanat d'art
+270,B1803,Industrie - Textile et mode
+271,B1804,Industrie - Textile et mode
+272,B1805,Industrie - Métallurgie
+273,B1805,Industrie - Textile et mode
+274,B1806,Artisanat d'art
+275,B1807,Industrie - Textile et mode
+276,B1808,Industrie - Textile et mode
+277,B1809,Industrie - Textile et mode
+278,B1810,Industrie - Textile et mode
+279,B1811,Industrie - Textile et mode
+280,B1812,Industrie - Textile et mode
+281,B1813,Industrie - Textile et mode
+282,B1814,Industrie - Textile et mode
+283,B1815,Industrie - Textile et mode
+284,B1815,Industries
+285,B1815,Maintenance
+286,B1816,Artisanat d'art
+287,C1101,Assurance
+288,C1102,Assurance
+289,C1103,Assurance
+290,C1104,Assurance
+291,C1104,Gestion administrative
+292,C1105,Assurance
+293,C1106,Assurance
+294,C1107,Assurance
+295,C1108,Assurance
+296,C1109,Assurance
+297,C1110,Assurance
+298,C1111,Assurance
+299,C1112,Assurance
+300,C1113,Assurance
+301,C1113,Automobile
+302,C1114,Assurance
+303,C1115,Assurance
+304,C1115,Banque
+305,C1115,Finance
+306,C1116,Assurance
+307,C1116,Banque
+308,C1116,Finance
+309,C1117,Automobile
+310,C1118,Assurance
+311,C1118,Banque
+312,C1118,Finance
+313,C1119,Assurance
+314,C1119,Banque
+315,C1119,Finance
+316,C1120,Assurance
+317,C1120,Banque
+318,C1120,Finance
+319,C1121,Assurance
+320,C1121,Banque
+321,C1121,Finance
+322,C1122,Assurance
+323,C1122,Banque
+324,C1122,Finance
+325,C1122,Service public
+326,C1122,Service à la personne
+327,C1123,Assurance
+328,C1123,Banque
+329,C1123,Finance
+330,C1123,Médical
+331,C1123,Service public
+332,C1124,Assurance
+333,C1124,Banque
+334,C1124,Finance
+335,C1124,Médical
+336,C1124,Service public
+337,C1125,Assurance
+338,C1125,Banque
+339,C1125,Finance
+340,C1125,Recherche
+341,C1126,Gestion administrative
+342,C1126,Ressources humaines
+343,C1127,Assurance
+344,C1127,Banque
+345,C1127,Finance
+346,C1128,Assurance
+347,C1128,Banque
+348,C1128,Finance
+349,C1129,Assurance
+350,C1129,Banque
+351,C1129,Finance
+352,C1130,Assurance
+353,C1130,Banque
+354,C1130,Défense
+355,C1130,Finance
+356,C1130,Service public
+357,C1130,Social
+358,C1130,Sécurité
+359,C1201,Banque
+360,C1202,Banque
+361,C1203,Banque
+362,C1204,Finance
+363,C1205,Immobilier
+364,C1206,Banque
+365,C1207,Banque
+366,C1208,Banque
+367,C1209,Assurance
+368,C1209,Banque
+369,C1209,Gestion administrative
+370,C1210,Assurance
+371,C1210,Banque
+372,C1210,Finance
+373,C1211,Assurance
+374,C1211,Banque
+375,C1211,Finance
+376,C1211,Logistique et courrier
+377,C1212,Assurance
+378,C1212,Banque
+379,C1212,Finance
+380,C1213,Assurance
+381,C1213,Banque
+382,C1213,Finance
+383,C1214,Assurance
+384,C1214,Banque
+385,C1214,Finance
+386,C1215,Assurance
+387,C1215,Banque
+388,C1215,Finance
+389,C1216,Assurance
+390,C1216,Banque
+391,C1216,Finance
+392,C1217,Assurance
+393,C1217,Banque
+394,C1217,Finance
+395,C1301,Finance
+396,C1302,Finance
+397,C1303,Finance
+398,C1304,Assurance
+399,C1304,Banque
+400,C1304,Finance
+401,C1305,Assurance
+402,C1305,Banque
+403,C1305,Finance
+404,C1306,Service public
+405,C1306,Sécurité
+406,C1401,Banque
+407,C1402,Assurance
+408,C1402,Banque
+409,C1402,Finance
+410,C1403,Assurance
+411,C1403,Banque
+412,C1403,Finance
+413,C1501,Immobilier
+414,C1502,Immobilier
+415,C1503,Architecture
+416,C1503,BTP
+417,C1503,Immobilier
+418,C1503,Étude des sols et des bâtiments
+419,C1504,Immobilier
+420,C1505,Immobilier
+421,C1506,Animation et loisir
+422,C1506,Immobilier
+423,C1506,Étude des sols et des bâtiments
+424,C1507,Activités juridiques
+425,C1507,Immobilier
+426,C1508,Immobilier
+427,D1101,Commerce de détail
+428,D1102,Commerce de détail
+429,D1102,Restauration
+430,D1103,Commerce de détail
+431,D1104,Commerce de détail
+432,D1104,Industrie - Alimentaire
+433,D1105,Commerce de détail
+434,D1106,Commerce de détail
+435,D1107,Commerce de gros
+436,D1107,Grande distribution
+437,D1108,Commerce de détail
+438,D1109,Commerce de détail
+439,D1110,Commerce de détail
+440,D1111,Commerce de détail
+441,D1111,Industrie - Alimentaire
+442,D1112,Commerce de détail
+443,D1112,Industrie - Alimentaire
+444,D1113,Commerce de gros
+445,D1113,Grande distribution
+446,D1114,Commerce de détail
+447,D1115,Commerce de détail
+448,D1115,Industrie - Alimentaire
+449,D1116,Commerce de détail
+450,D1116,Commerce de gros
+451,D1117,Commerce de détail
+452,D1117,Industrie - Alimentaire
+453,D1118,Commerce de détail
+454,D1118,Hôtellerie
+455,D1118,Industrie - Alimentaire
+456,D1118,Restauration
+457,D1119,Commerce de détail
+458,D1119,Commerce de gros
+459,D1119,Industrie - Alimentaire
+460,D1119,"Élevage, pêche"
+461,D1120,Industrie - Alimentaire
+462,D1120,Restauration
+463,D1201,Commerce de détail
+464,D1202,Commerce de détail
+465,D1203,Médical
+466,D1203,Service à la personne
+467,D1204,Automobile
+468,D1205,Service à la personne
+469,D1206,Industrie - Textile et mode
+470,D1207,Industrie - Textile et mode
+471,D1208,Service à la personne
+472,D1209,Commerce de détail
+473,D1210,Commerce de détail
+474,D1211,Animation et loisir
+475,D1211,Commerce de détail
+476,D1211,Sport
+477,D1212,Commerce de détail
+478,D1212,Grande distribution
+479,D1213,Commerce de gros
+480,D1214,Commerce de détail
+481,D1215,Service à la personne
+482,D1216,Service à la personne
+483,D1217,Service à la personne
+484,D1218,"Conseil, orientation et formation"
+485,D1218,Service à la personne
+486,D1219,Commerce de détail
+487,D1220,Service à la personne
+488,D1221,Animation et loisir
+489,D1221,Commerce de détail
+490,D1222,Commerce de détail
+491,D1222,Service à la personne
+492,D1223,Automobile
+493,D1223,Commerce de détail
+494,D1224,Commerce de détail
+495,D1224,Commerce de gros
+496,D1224,Grande distribution
+497,D1225,Service à la personne
+498,D1226,Industrie - Textile et mode
+499,D1227,Commerce de détail
+500,D1227,Industrie - Métallurgie
+501,D1228,Nettoyage
+502,D1228,Service public
+503,D1229,Service à la personne
+504,D1230,Tourisme
+505,D1230,Transport
+506,D1231,Hôtellerie
+507,D1231,Tourisme
+508,D1232,"Conseil, orientation et formation"
+509,D1233,Commerce de détail
+510,D1233,Culture et patrimoine
+511,D1234,Tourisme
+512,D1235,Tourisme
+513,D1236,Service à la personne
+514,D1237,Service à la personne
+515,D1238,Automobile
+516,D1239,Service à la personne
+517,D1240,Service à la personne
+518,D1241,Service à la personne
+519,D1242,Hôtellerie
+520,D1242,Nettoyage
+521,D1243,Commerce de détail
+522,D1244,Artisanat d'art
+523,D1244,Service à la personne
+524,D1245,Commerce de détail
+525,D1245,Grande distribution
+526,D1246,Commerce de détail
+527,D1247,Commerce de détail
+528,D1247,Grande distribution
+529,D1248,Commerce de détail
+530,D1248,Médical
+531,D1249,Commerce de détail
+532,D1250,Commerce de détail
+533,D1251,Commerce de détail
+534,D1252,Automobile
+535,D1252,Commerce de détail
+536,D1253,Commerce de détail
+537,D1254,Commerce de détail
+538,D1301,Commerce de détail
+539,D1302,Commerce de détail
+540,D1302,Commerce de gros
+541,D1303,Automobile
+542,D1303,Commerce de détail
+543,D1304,Commerce de détail
+544,D1304,Maintenance
+545,D1304,Nettoyage
+546,D1305,Commerce de détail
+547,D1401,Commerce de gros
+548,D1402,Commerce de gros
+549,D1402,Industries
+550,D1403,Commerce de détail
+551,D1403,Communication et marketing
+552,D1404,Automobile
+553,D1404,Commerce de détail
+554,D1405,Médical
+555,D1406,Gestion administrative
+556,D1407,Commerce de détail
+557,D1408,Communication et marketing
+558,D1409,Commerce de détail
+559,D1409,Commerce de gros
+560,D1410,Commerce de gros
+561,D1411,Communication et marketing
+562,D1411,Industries
+563,D1411,Médical
+564,D1411,Recherche
+565,D1412,Industries
+566,D1412,Médical
+567,D1413,Industries
+568,D1413,Médical
+569,D1414,Communication et marketing
+570,D1415,Animation et loisir
+571,D1415,Commerce de gros
+572,D1416,Commerce de gros
+573,D1417,Commerce de détail
+574,D1417,Commerce de gros
+575,D1418,Commerce de gros
+576,D1418,Industrie - Bois
+577,D1419,Commerce de détail
+578,D1420,Commerce de détail
+579,D1421,Automobile
+580,D1422,Comptabilité
+581,D1423,Automobile
+582,D1424,Commerce de détail
+583,D1425,Commerce de détail
+584,D1426,Automobile
+585,D1427,Automobile
+586,D1427,Commerce de détail
+587,D1428,Médical
+588,D1428,Service à la personne
+589,D1429,Commerce de détail
+590,D1429,Commerce de gros
+591,D1429,Grande distribution
+592,D1430,Automobile
+593,D1431,Commerce de détail
+594,D1431,Commerce de gros
+595,D1431,Grande distribution
+596,D1432,Commerce de détail
+597,D1432,Commerce de gros
+598,D1432,Gestion administrative
+599,D1432,Grande distribution
+600,D1433,Commerce de détail
+601,D1433,Commerce de gros
+602,D1434,Automobile
+603,D1435,Communication et marketing
+604,D1436,Médical
+605,D1437,Automobile
+606,D1438,Commerce de détail
+607,D1438,Commerce de gros
+608,D1439,Commerce de détail
+609,D1439,Commerce de gros
+610,D1440,Automobile
+611,D1441,Commerce de détail
+612,D1441,Commerce de gros
+613,D1442,Commerce de gros
+614,D1443,Communication et marketing
+615,D1444,Commerce de gros
+616,D1501,Commerce de détail
+617,D1501,Commerce de gros
+618,D1501,Grande distribution
+619,D1502,Grande distribution
+620,D1503,Grande distribution
+621,D1504,Grande distribution
+622,D1505,Commerce de détail
+623,D1505,Grande distribution
+624,D1506,Grande distribution
+625,D1507,Grande distribution
+626,D1508,Commerce de détail
+627,D1508,Grande distribution
+628,D1509,Grande distribution
+629,D1510,Grande distribution
+630,D1511,Automobile
+631,D1511,Grande distribution
+632,D1512,Grande distribution
+633,D1513,Grande distribution
+634,D1514,Transport
+635,D1515,Commerce de détail
+636,D1515,Spectacle
+637,D1516,Grande distribution
+638,D1517,Grande distribution
+639,E1101,Communication et marketing
+640,E1102,Édition
+641,E1103,Communication et marketing
+642,E1103,Industries
+643,E1104,Communication et marketing
+644,E1104,Informatique
+645,E1104,Édition
+646,E1105,Édition
+647,E1106,Édition
+648,E1107,Communication et marketing
+649,E1108,Communication et marketing
+650,E1108,Édition
+651,E1109,Communication et marketing
+652,E1109,Industries
+653,E1110,Édition
+654,E1111,Animation et loisir
+655,E1111,Audiovisuel
+656,E1112,Communication et marketing
+657,E1112,Industries
+658,E1113,Commerce de détail
+659,E1113,Commerce de gros
+660,E1114,Édition
+661,E1115,Informatique
+662,E1115,Édition
+663,E1116,Communication et marketing
+664,E1116,Édition
+665,E1117,Animation et loisir
+666,E1118,Communication et marketing
+667,E1119,Communication et marketing
+668,E1119,Édition
+669,E1120,Édition
+670,E1121,Édition
+671,E1122,Social
+672,E1122,Édition
+673,E1123,Communication et marketing
+674,E1124,Communication et marketing
+675,E1125,Animation et loisir
+676,E1125,Audiovisuel
+677,E1125,Informatique
+678,E1125,Édition
+679,E1126,Animation et loisir
+680,E1126,Édition
+681,E1127,Communication et marketing
+682,E1128,Communication et marketing
+683,E1129,Communication et marketing
+684,E1129,Édition
+685,E1130,Artisanat d'art
+686,E1130,Audiovisuel
+687,E1130,Édition
+688,E1131,Communication et marketing
+689,E1132,Édition
+690,E1133,Communication et marketing
+691,E1134,Audiovisuel
+692,E1134,Spectacle
+693,E1134,Édition
+694,E1201,Artisanat d'art
+695,E1202,Audiovisuel
+696,E1203,Artisanat d'art
+697,E1204,Audiovisuel
+698,E1205,Communication et marketing
+699,E1205,Informatique
+700,E1205,Édition
+701,E1206,Informatique
+702,E1206,Recherche
+703,E1207,Audiovisuel
+704,E1207,Communication et marketing
+705,E1207,Informatique
+706,E1208,Audiovisuel
+707,E1209,Artisanat d'art
+708,E1210,Communication et marketing
+709,E1210,Informatique
+710,E1211,Artisanat d'art
+711,E1211,Communication et marketing
+712,E1212,Audiovisuel
+713,E1212,Industrie - Électronique
+714,E1213,Audiovisuel
+715,E1214,Artisanat d'art
+716,E1214,Audiovisuel
+717,E1214,Informatique
+718,E1214,Spectacle
+719,E1214,Télécommunication
+720,E1301,Imprimerie
+721,E1302,Imprimerie
+722,E1303,Imprimerie
+723,E1304,Imprimerie
+724,E1305,Édition
+725,E1306,Imprimerie
+726,E1307,Imprimerie
+727,E1308,Imprimerie
+728,E1309,Imprimerie
+729,E1309,Logistique et courrier
+730,E1310,Imprimerie
+731,E1311,Imprimerie
+732,E1312,Édition
+733,E1313,Imprimerie
+734,E1314,Imprimerie
+735,E1314,Papier
+736,E1315,Imprimerie
+737,E1315,Papier
+738,E1316,Imprimerie
+739,E1401,Communication et marketing
+740,E1402,Communication et marketing
+741,E1403,Communication et marketing
+742,E1404,Communication et marketing
+743,E1405,Communication et marketing
+744,E1406,Communication et marketing
+745,E1407,Communication et marketing
+746,E1407,Informatique
+747,E1408,Communication et marketing
+748,E1409,Communication et marketing
+749,E1410,Communication et marketing
+750,E1410,Informatique
+751,E1411,Communication et marketing
+752,E1412,Communication et marketing
+753,E1413,Communication et marketing
+754,E1414,Communication et marketing
+755,E1415,Communication et marketing
+756,E1415,Imprimerie
+757,E1415,Papier
+758,F1101,Architecture
+759,F1101,BTP
+760,F1102,Architecture
+761,F1103,BTP
+762,F1103,Énergie
+763,F1104,Architecture
+764,F1104,BTP
+765,F1104,Gros Œuvre
+766,F1104,Second Œuvre
+767,F1105,BTP
+768,F1105,Environnement
+769,F1105,Étude des sols et des bâtiments
+770,F1106,BTP
+771,F1106,Étude des sols et des bâtiments
+772,F1107,Architecture
+773,F1107,Étude des sols et des bâtiments
+774,F1108,Architecture
+775,F1108,BTP
+776,F1109,BTP
+777,F1109,Étude des sols et des bâtiments
+778,F1110,Architecture
+779,F1111,Étude des sols et des bâtiments
+780,F1112,Étude des sols et des bâtiments
+781,F1113,Architecture
+782,F1113,BTP
+783,F1113,Recherche
+784,F1113,Service public
+785,F1113,Télécommunication
+786,F1114,Architecture
+787,F1114,Second Œuvre
+788,F1114,Énergie
+789,F1115,Environnement
+790,F1116,Industries
+791,F1116,Énergie
+792,F1117,BTP
+793,F1117,Énergie
+794,F1117,Étude des sols et des bâtiments
+795,F1118,Environnement
+796,F1119,Environnement
+797,F1120,Architecture
+798,F1120,BTP
+799,F1120,Service public
+800,F1121,Architecture
+801,F1122,Industrie - Chimie
+802,F1122,Industries
+803,F1123,Enseignement
+804,F1123,Environnement
+805,F1123,Recherche
+806,F1123,Service public
+807,F1124,Environnement
+808,F1124,Énergie
+809,F1125,BTP
+810,F1125,Étude des sols et des bâtiments
+811,F1126,Architecture
+812,F1127,Architecture
+813,F1127,Service public
+814,F1128,BTP
+815,F1128,Environnement
+816,F1128,Énergie
+817,F1128,Étude des sols et des bâtiments
+818,F1129,Industries
+819,F1129,Recherche
+820,F1129,Énergie
+821,F1129,Étude des sols et des bâtiments
+822,F1130,BTP
+823,F1130,Normes
+824,F1131,Service public
+825,F1132,BTP
+826,F1132,Étude des sols et des bâtiments
+827,F1133,Immobilier
+828,F1133,Service public
+829,F1134,Architecture
+830,F1134,BTP
+831,F1135,BTP
+832,F1136,Énergie
+833,F1137,BTP
+834,F1138,Environnement
+835,F1138,Énergie
+836,F1139,Architecture
+837,F1139,BTP
+838,F1139,Commerce de détail
+839,F1139,Second Œuvre
+840,F1140,Architecture
+841,F1140,Second Œuvre
+842,F1141,BTP
+843,F1141,Industries
+844,F1141,Énergie
+845,F1142,Recherche
+846,F1143,BTP
+847,F1143,Environnement
+848,F1143,Recherche
+849,F1143,Énergie
+850,F1143,Étude des sols et des bâtiments
+851,F1144,Architecture
+852,F1144,Industries
+853,F1145,BTP
+854,F1145,Environnement
+855,F1145,Service public
+856,F1145,Transport
+857,F1146,Étude des sols et des bâtiments
+858,F1201,BTP
+859,F1201,Second Œuvre
+860,F1202,BTP
+861,F1203,Industries
+862,F1204,BTP
+863,F1205,Gros Œuvre
+864,F1205,Second Œuvre
+865,F1206,Gros Œuvre
+866,F1206,Second Œuvre
+867,F1207,BTP
+868,F1207,Environnement
+869,F1207,Énergie
+870,F1208,BTP
+871,F1209,BTP
+872,F1210,BTP
+873,F1211,Industries
+874,F1211,Énergie
+875,F1212,Industries
+876,F1212,Énergie
+877,F1301,BTP
+878,F1302,BTP
+879,F1302,Environnement
+880,F1303,Animation et loisir
+881,F1303,BTP
+882,F1401,BTP
+883,F1401,Industries
+884,F1402,BTP
+885,F1403,Industries
+886,F1404,Industries
+887,F1501,BTP
+888,F1501,Industrie - Bois
+889,F1502,BTP
+890,F1503,Gros Œuvre
+891,F1504,Second Œuvre
+892,F1505,BTP
+893,F1506,BTP
+894,F1506,Industries
+895,F1601,Second Œuvre
+896,F1602,Second Œuvre
+897,F1603,Second Œuvre
+898,F1604,Second Œuvre
+899,F1605,BTP
+900,F1605,Énergie
+901,F1606,Second Œuvre
+902,F1607,Second Œuvre
+903,F1608,Second Œuvre
+904,F1609,Second Œuvre
+905,F1610,Second Œuvre
+906,F1610,Énergie
+907,F1611,Gros Œuvre
+908,F1612,Industries
+909,F1612,Second Œuvre
+910,F1613,BTP
+911,F1613,Gros Œuvre
+912,F1613,Second Œuvre
+913,F1614,Second Œuvre
+914,F1615,Second Œuvre
+915,F1616,Second Œuvre
+916,F1617,Second Œuvre
+917,F1618,Gros Œuvre
+918,F1619,Second Œuvre
+919,F1620,Second Œuvre
+920,F1620,Énergie
+921,F1621,Environnement
+922,F1621,Second Œuvre
+923,F1622,BTP
+924,F1623,BTP
+925,F1623,Télécommunication
+926,F1624,Second Œuvre
+927,F1625,Second Œuvre
+928,F1626,Industries
+929,F1626,Second Œuvre
+930,F1627,Second Œuvre
+931,F1628,Automobile
+932,F1628,Second Œuvre
+933,F1628,Énergie
+934,F1629,BTP
+935,F1629,Transport
+936,F1630,Second Œuvre
+937,F1701,Gros Œuvre
+938,F1702,BTP
+939,F1703,Gros Œuvre
+940,F1704,BTP
+941,F1705,BTP
+942,F1706,BTP
+943,F1706,Industries
+944,F1707,"Agriculture, sylviculture"
+945,F1707,Environnement
+946,F1707,Gros Œuvre
+947,F1708,BTP
+948,F1709,BTP
+949,F1710,Commerce de gros
+950,F1710,Gros Œuvre
+951,F1711,BTP
+952,F1712,BTP
+953,F1712,Commerce de gros
+954,F1712,Environnement
+955,F1713,Gros Œuvre
+956,G1101,Tourisme
+957,G1102,Tourisme
+958,G1103,Environnement
+959,G1103,Tourisme
+960,G1104,Tourisme
+961,G1105,Tourisme
+962,G1106,Culture et patrimoine
+963,G1106,Environnement
+964,G1106,Tourisme
+965,G1107,Tourisme
+966,G1108,Tourisme
+967,G1201,Culture et patrimoine
+968,G1201,Tourisme
+969,G1202,Animation et loisir
+970,G1203,Animation et loisir
+971,G1204,Sport
+972,G1205,Animation et loisir
+973,G1206,Animation et loisir
+974,G1206,Tourisme
+975,G1207,Sport
+976,G1208,Sport
+977,G1209,Animation et loisir
+978,G1209,Sport
+979,G1210,Environnement
+980,G1210,Sport
+981,G1211,Sport
+982,G1212,Animation et loisir
+983,G1212,Sport
+984,G1213,Sport
+985,G1214,Sport
+986,G1215,Sport
+987,G1216,Sport
+988,G1217,Sport
+989,G1218,Sport
+990,G1219,Ressources humaines
+991,G1219,Sport
+992,G1220,Enseignement
+993,G1220,Médical
+994,G1220,Social
+995,G1221,Animation et loisir
+996,G1222,Culture et patrimoine
+997,G1222,Tourisme
+998,G1223,Animation et loisir
+999,G1223,Spectacle
+1000,G1224,Sport
+1001,G1225,Animation et loisir
+1002,G1225,Culture et patrimoine
+1003,G1226,Sport
+1004,G1227,Culture et patrimoine
+1005,G1227,Tourisme
+1006,G1228,Sport
+1007,G1229,Sport
+1008,G1229,Tourisme
+1009,G1230,Sport
+1010,G1231,Animation et loisir
+1011,G1231,Culture et patrimoine
+1012,G1231,Environnement
+1013,G1231,Tourisme
+1014,G1232,Animation et loisir
+1015,G1232,Tourisme
+1016,G1233,Sport
+1017,G1234,Sport
+1018,G1234,Tourisme
+1019,G1235,Animation et loisir
+1020,G1236,Animation et loisir
+1021,G1237,Animation et loisir
+1022,G1237,Social
+1023,G1238,Animation et loisir
+1024,G1238,Informatique
+1025,G1239,Animation et loisir
+1026,G1240,Animation et loisir
+1027,G1240,Culture et patrimoine
+1028,G1240,Environnement
+1029,G1240,Tourisme
+1030,G1241,Animation et loisir
+1031,G1242,Animation et loisir
+1032,G1242,Culture et patrimoine
+1033,G1242,Environnement
+1034,G1243,Animation et loisir
+1035,G1243,Culture et patrimoine
+1036,G1243,Environnement
+1037,G1243,Service public
+1038,G1243,Social
+1039,G1244,Animation et loisir
+1040,G1244,Tourisme
+1041,G1245,Sport
+1042,G1245,Tourisme
+1043,G1246,Animation et loisir
+1044,G1246,"Conseil, orientation et formation"
+1045,G1246,Service public
+1046,G1246,Tourisme
+1047,G1247,Animation et loisir
+1048,G1247,Hôtellerie
+1049,G1247,Tourisme
+1050,G1248,Animation et loisir
+1051,G1248,Culture et patrimoine
+1052,G1248,Spectacle
+1053,G1249,Animation et loisir
+1054,G1249,Culture et patrimoine
+1055,G1301,Tourisme
+1056,G1302,Hôtellerie
+1057,G1302,Tourisme
+1058,G1302,Transport
+1059,G1303,Tourisme
+1060,G1304,Tourisme
+1061,G1305,Tourisme
+1062,G1306,Tourisme
+1063,G1307,Tourisme
+1064,G1308,Tourisme
+1065,G1401,Restauration
+1066,G1402,Hôtellerie
+1067,G1402,Restauration
+1068,G1403,Animation et loisir
+1069,G1403,Hôtellerie
+1070,G1403,Tourisme
+1071,G1404,Restauration
+1072,G1405,Sport
+1073,G1406,Sport
+1074,G1407,Hôtellerie
+1075,G1407,Restauration
+1076,G1408,Hôtellerie
+1077,G1409,Animation et loisir
+1078,G1409,Restauration
+1079,G1410,Restauration
+1080,G1411,Restauration
+1081,G1412,Animation et loisir
+1082,G1412,Hôtellerie
+1083,G1412,Tourisme
+1084,G1413,Restauration
+1085,G1414,Animation et loisir
+1086,G1414,Spectacle
+1087,G1415,Hôtellerie
+1088,G1415,Tourisme
+1089,G1416,Hôtellerie
+1090,G1417,Animation et loisir
+1091,G1417,Tourisme
+1092,G1418,Animation et loisir
+1093,G1418,Audiovisuel
+1094,G1418,Spectacle
+1095,G1501,Hôtellerie
+1096,G1502,Hôtellerie
+1097,G1503,Hôtellerie
+1098,G1503,Tourisme
+1099,G1504,Hôtellerie
+1100,G1504,Tourisme
+1101,G1601,Hôtellerie
+1102,G1601,Restauration
+1103,G1602,Restauration
+1104,G1603,Restauration
+1105,G1604,Restauration
+1106,G1605,Restauration
+1107,G1606,Restauration
+1108,G1607,Restauration
+1109,G1608,Restauration
+1110,G1609,Restauration
+1111,G1610,Restauration
+1112,G1611,Restauration
+1113,G1611,Transport
+1114,G1612,Restauration
+1115,G1613,Commerce de détail
+1116,G1613,Restauration
+1117,G1701,Hôtellerie
+1118,G1702,Hôtellerie
+1119,G1703,Hôtellerie
+1120,G1704,Hôtellerie
+1121,G1705,Hôtellerie
+1122,G1706,Hôtellerie
+1123,G1707,Hôtellerie
+1124,G1707,Spectacle
+1125,G1708,Hôtellerie
+1126,G1708,Restauration
+1127,G1709,Hôtellerie
+1128,G1709,Tourisme
+1129,G1801,Restauration
+1130,G1802,Restauration
+1131,G1803,Restauration
+1132,G1804,Commerce de détail
+1133,G1804,Restauration
+1134,G1805,Restauration
+1135,G1806,Restauration
+1136,G1807,Restauration
+1137,G1808,Hôtellerie
+1138,G1808,Restauration
+1139,G1809,Restauration
+1140,G1810,Restauration
+1141,H1101,Informatique
+1142,H1102,Automobile
+1143,H1102,Industrie - Textile et mode
+1144,H1102,Industries
+1145,H1102,Énergie
+1146,H1103,Industries
+1147,H1104,Gestion administrative
+1148,H1104,Médical
+1149,H1105,Industries
+1150,H1105,Médical
+1151,H1106,Informatique
+1152,H1107,Informatique
+1153,H1108,Industries
+1154,H1109,Industries
+1155,H1109,Énergie
+1156,H1201,Industrie - Textile et mode
+1157,H1202,Industrie - Électronique
+1158,H1202,Industries
+1159,H1203,Industries
+1160,H1204,Industries
+1161,H1205,Industrie - Textile et mode
+1162,H1206,Industries
+1163,H1206,Recherche
+1164,H1207,Industries
+1165,H1207,Service public
+1166,H1208,Industries
+1167,H1209,Industrie - Électronique
+1168,H1209,Énergie
+1169,H1210,Industries
+1170,H1210,Recherche
+1171,H1210,Énergie
+1172,H1211,Recherche
+1173,H1212,Industries
+1174,H1212,Recherche
+1175,H1213,Industries
+1176,H1213,Médical
+1177,H1213,Recherche
+1178,H1214,Industries
+1179,H1214,Médical
+1180,H1214,Recherche
+1181,H1215,Industries
+1182,H1215,Recherche
+1183,H1216,Industries
+1184,H1216,Médical
+1185,H1216,Recherche
+1186,H1217,Industries
+1187,H1217,Recherche
+1188,H1218,Industries
+1189,H1218,Médical
+1190,H1218,Recherche
+1191,H1219,Industries
+1192,H1219,Médical
+1193,H1219,Recherche
+1194,H1220,Industries
+1195,H1220,Médical
+1196,H1220,Recherche
+1197,H1221,Recherche
+1198,H1222,Industries
+1199,H1222,Médical
+1200,H1222,Recherche
+1201,H1223,Industries
+1202,H1223,Médical
+1203,H1223,Recherche
+1204,H1224,Industries
+1205,H1224,Médical
+1206,H1224,Recherche
+1207,H1225,Recherche
+1208,H1225,Énergie
+1209,H1226,Industries
+1210,H1227,Industrie - Électronique
+1211,H1228,Industrie - Électronique
+1212,H1229,Recherche
+1213,H1230,Industries
+1214,H1230,Recherche
+1215,H1230,Énergie
+1216,H1231,Industrie - Textile et mode
+1217,H1232,Industrie - Textile et mode
+1218,H1233,Recherche
+1219,H1234,Industries
+1220,H1234,Service public
+1221,H1235,Industries
+1222,H1236,Industrie - Électronique
+1223,H1237,BTP
+1224,H1237,Recherche
+1225,H1237,Service public
+1226,H1237,Énergie
+1227,H1238,Industries
+1228,H1239,Industrie - Électronique
+1229,H1240,Industrie - Textile et mode
+1230,H1241,Industrie - Chimie
+1231,H1241,Industries
+1232,H1241,Énergie
+1233,H1242,Industrie - Alimentaire
+1234,H1242,Industrie - Chimie
+1235,H1242,Industries
+1236,H1243,Industrie - Chimie
+1237,H1243,Industries
+1238,H1243,Médical
+1239,H1243,Recherche
+1240,H1244,Industrie - Alimentaire
+1241,H1245,Automobile
+1242,H1245,Industrie - Électronique
+1243,H1245,Industries
+1244,H1245,Recherche
+1245,H1245,Énergie
+1246,H1246,Maintenance
+1247,H1301,Environnement
+1248,H1302,Industries
+1249,H1302,Recherche
+1250,H1303,Environnement
+1251,H1303,Industries
+1252,H1304,Industries
+1253,H1304,Médical
+1254,H1304,Normes
+1255,H1305,Industries
+1256,H1305,Sécurité
+1257,H1306,Industries
+1258,H1306,Recherche
+1259,H1306,Énergie
+1260,H1307,Industries
+1261,H1308,Industries
+1262,H1309,Industrie - Chimie
+1263,H1309,Industries
+1264,H1309,Énergie
+1265,H1310,Activités juridiques
+1266,H1310,Industries
+1267,H1311,Environnement
+1268,H1311,Recherche
+1269,H1311,Service public
+1270,H1312,Industrie - Chimie
+1271,H1312,Industries
+1272,H1312,Recherche
+1273,H1313,Recherche
+1274,H1313,Ressources humaines
+1275,H1313,Sécurité
+1276,H1401,Industries
+1277,H1401,Logistique et courrier
+1278,H1402,Industries
+1279,H1403,Industries
+1280,H1404,Industries
+1281,H1404,Énergie
+1282,H1405,Industries
+1283,H1406,Industries
+1284,H1407,Industries
+1285,H1408,Industrie - Métallurgie
+1286,H1408,Industries
+1287,H1408,Recherche
+1288,H1409,Industrie - Métallurgie
+1289,H1409,Industries
+1290,H1409,Recherche
+1291,H1410,Industrie - Électronique
+1292,H1410,Industries
+1293,H1501,Industries
+1294,H1501,Normes
+1295,H1502,Industries
+1296,H1502,Normes
+1297,H1503,Industries
+1298,H1503,Normes
+1299,H1503,Énergie
+1300,H1504,Industrie - Électronique
+1301,H1505,Industrie - Chimie
+1302,H1506,Industrie - Métallurgie
+1303,H1507,Industries
+1304,H1507,Recherche
+1305,H1508,Industries
+1306,H1508,Médical
+1307,H1508,Recherche
+1308,H1509,Activités juridiques
+1309,H1509,Industries
+1310,H1509,Médical
+1311,H1509,Recherche
+1312,H1510,Industrie - Chimie
+1313,H1510,Industries
+1314,H1510,Médical
+1315,H1510,Recherche
+1316,H1511,Industries
+1317,H1511,Recherche
+1318,H1512,Grande distribution
+1319,H1512,Industries
+1320,H1512,Transport
+1321,H1513,Industries
+1322,H1513,Médical
+1323,H1513,Recherche
+1324,H1514,Industries
+1325,H1514,Médical
+1326,H1514,Recherche
+1327,H1515,Industries
+1328,H1515,Médical
+1329,H1515,Recherche
+1330,H1516,Industries
+1331,H1516,Médical
+1332,H1516,Recherche
+1333,H1517,Industries
+1334,H1517,Médical
+1335,H1517,Recherche
+1336,H1518,Industries
+1337,H1519,Industries
+1338,H1519,Médical
+1339,H1519,Recherche
+1340,H1520,Industries
+1341,H1521,Industries
+1342,H1522,Automobile
+1343,H1522,Industrie - Métallurgie
+1344,H1522,Industries
+1345,H1522,Énergie
+1346,H1523,Industries
+1347,H1523,Normes
+1348,H1524,Industries
+1349,H1524,Normes
+1350,H1525,Industries
+1351,H1525,Normes
+1352,H1526,Industries
+1353,H1526,Normes
+1354,H1527,Industries
+1355,H1527,Normes
+1356,H1528,Industries
+1357,H1528,Normes
+1358,H1529,Médical
+1359,H1529,Normes
+1360,H1530,Normes
+1361,H1531,Industries
+1362,H1531,Normes
+1363,H1532,Industries
+1364,H1532,Normes
+1365,H1533,Industrie - Chimie
+1366,H1533,Industrie - Métallurgie
+1367,H1533,Industries
+1368,H1533,Recherche
+1369,H1533,Énergie
+1370,H1534,Industries
+1371,H1534,Normes
+1372,H1535,Industrie - Métallurgie
+1373,H1535,Normes
+1374,H2101,Industrie - Alimentaire
+1375,H2102,Industrie - Alimentaire
+1376,H2103,Industrie - Alimentaire
+1377,H2104,Industrie - Alimentaire
+1378,H2105,Industrie - Alimentaire
+1379,H2106,Industrie - Alimentaire
+1380,H2107,Industrie - Alimentaire
+1381,H2108,Industrie - Alimentaire
+1382,H2109,Industrie - Alimentaire
+1383,H2201,Industrie - Bois
+1384,H2202,Industrie - Bois
+1385,H2203,Industrie - Bois
+1386,H2203,Industries
+1387,H2204,Industrie - Bois
+1388,H2205,"Agriculture, sylviculture"
+1389,H2205,Industrie - Bois
+1390,H2206,Industrie - Bois
+1391,H2207,Culture et patrimoine
+1392,H2207,Industrie - Bois
+1393,H2208,Artisanat d'art
+1394,H2208,Industrie - Bois
+1395,H2209,Architecture
+1396,H2209,Industrie - Bois
+1397,H2209,Second Œuvre
+1398,H2210,Industrie - Bois
+1399,H2211,Industrie - Bois
+1400,H2212,Industrie - Bois
+1401,H2213,Industrie - Bois
+1402,H2214,Industrie - Bois
+1403,H2215,Industrie - Bois
+1404,H2216,"Agriculture, sylviculture"
+1405,H2216,Industrie - Bois
+1406,H2217,"Agriculture, sylviculture"
+1407,H2217,Industrie - Bois
+1408,H2218,"Agriculture, sylviculture"
+1409,H2218,Industrie - Bois
+1410,H2219,Industrie - Bois
+1411,H2219,Industries
+1412,H2220,Industrie - Bois
+1413,H2220,Industries
+1414,H2301,Industrie - Chimie
+1415,H2302,Industries
+1416,H2302,Médical
+1417,H2303,Industries
+1418,H2303,Médical
+1419,H2303,Recherche
+1420,H2304,Médical
+1421,H2401,Industrie - Textile et mode
+1422,H2402,Industrie - Textile et mode
+1423,H2403,Industrie - Textile et mode
+1424,H2404,Industrie - Textile et mode
+1425,H2405,Industrie - Textile et mode
+1426,H2406,Industrie - Textile et mode
+1427,H2406,Industries
+1428,H2407,Industrie - Textile et mode
+1429,H2407,Industries
+1430,H2408,Industrie - Textile et mode
+1431,H2409,Industrie - Textile et mode
+1432,H2409,Industries
+1433,H2410,Industrie - Textile et mode
+1434,H2410,Industries
+1435,H2411,Industrie - Textile et mode
+1436,H2411,Industries
+1437,H2412,Industrie - Textile et mode
+1438,H2413,Industrie - Textile et mode
+1439,H2414,Industrie - Textile et mode
+1440,H2415,Industrie - Textile et mode
+1441,H2416,Industrie - Textile et mode
+1442,H2417,Industrie - Textile et mode
+1443,H2418,Industrie - Textile et mode
+1444,H2419,Industrie - Textile et mode
+1445,H2420,Industrie - Textile et mode
+1446,H2421,Industrie - Textile et mode
+1447,H2422,Industrie - Textile et mode
+1448,H2423,Industrie - Textile et mode
+1449,H2424,Industrie - Textile et mode
+1450,H2425,Industrie - Textile et mode
+1451,H2426,Industrie - Textile et mode
+1452,H2426,Industries
+1453,H2427,Industrie - Textile et mode
+1454,H2501,Industrie - Électronique
+1455,H2501,Énergie
+1456,H2502,Industrie - Métallurgie
+1457,H2502,Industries
+1458,H2503,Industries
+1459,H2504,Industrie - Alimentaire
+1460,H2504,Industrie - Chimie
+1461,H2504,Industries
+1462,H2505,Industrie - Textile et mode
+1463,H2506,Industrie - Alimentaire
+1464,H2507,Industries
+1465,H2507,Médical
+1466,H2508,Industries
+1467,H2508,Énergie
+1468,H2509,Industrie - Métallurgie
+1469,H2509,Industries
+1470,H2510,Industries
+1471,H2511,Industries
+1472,H2512,Industrie - Textile et mode
+1473,H2513,Industrie - Textile et mode
+1474,H2514,Industries
+1475,H2514,Recherche
+1476,H2515,Industrie - Alimentaire
+1477,H2515,Industrie - Textile et mode
+1478,H2515,Industries
+1479,H2516,Industrie - Métallurgie
+1480,H2516,Industries
+1481,H2601,Industrie - Électronique
+1482,H2601,Énergie
+1483,H2602,Industrie - Électronique
+1484,H2603,Industrie - Électronique
+1485,H2603,Énergie
+1486,H2604,Industrie - Électronique
+1487,H2605,Industrie - Électronique
+1488,H2605,Industries
+1489,H2606,Industrie - Électronique
+1490,H2607,Industrie - Électronique
+1491,H2608,Industrie - Électronique
+1492,H2701,Industries
+1493,H2701,Énergie
+1494,H2702,Industries
+1495,H2702,Énergie
+1496,H2703,Automobile
+1497,H2703,Énergie
+1498,H2704,Automobile
+1499,H2704,Industrie - Électronique
+1500,H2704,Énergie
+1501,H2705,Automobile
+1502,H2705,Industries
+1503,H2705,Énergie
+1504,H2706,Industries
+1505,H2706,Énergie
+1506,H2707,Industries
+1507,H2707,Énergie
+1508,H2708,Industries
+1509,H2708,Énergie
+1510,H2709,Environnement
+1511,H2709,Énergie
+1512,H2710,Industrie - Chimie
+1513,H2710,Industries
+1514,H2710,Énergie
+1515,H2711,Industrie - Chimie
+1516,H2712,Énergie
+1517,H2713,Énergie
+1518,H2714,Industrie - Chimie
+1519,H2715,Énergie
+1520,H2716,Énergie
+1521,H2801,Industries
+1522,H2802,BTP
+1523,H2802,Gros Œuvre
+1524,H2802,Industries
+1525,H2802,Second Œuvre
+1526,H2803,Industries
+1527,H2804,BTP
+1528,H2804,Gros Œuvre
+1529,H2804,Industries
+1530,H2804,Second Œuvre
+1531,H2805,Industries
+1532,H2806,Industrie - Chimie
+1533,H2806,Industries
+1534,H2807,Industries
+1535,H2808,Industries
+1536,H2809,Industries
+1537,H2810,Gros Œuvre
+1538,H2810,Industries
+1539,H2811,Industries
+1540,H2901,Industrie - Métallurgie
+1541,H2901,Industries
+1542,H2902,Automobile
+1543,H2902,Industrie - Métallurgie
+1544,H2902,Industries
+1545,H2902,Transport
+1546,H2903,Industrie - Métallurgie
+1547,H2903,Industries
+1548,H2904,Industrie - Métallurgie
+1549,H2904,Industries
+1550,H2905,Industrie - Métallurgie
+1551,H2906,Industrie - Métallurgie
+1552,H2906,Industries
+1553,H2907,Industrie - Métallurgie
+1554,H2907,Industries
+1555,H2908,Industrie - Chimie
+1556,H2908,Industries
+1557,H2909,Automobile
+1558,H2909,Industrie - Métallurgie
+1559,H2909,Industrie - Électronique
+1560,H2909,Industries
+1561,H2910,Industrie - Métallurgie
+1562,H2911,Industrie - Métallurgie
+1563,H2912,Industries
+1564,H2913,Industrie - Métallurgie
+1565,H2913,Industries
+1566,H2914,Industrie - Métallurgie
+1567,H2915,Industrie - Métallurgie
+1568,H2916,Industrie - Métallurgie
+1569,H2917,Industrie - Métallurgie
+1570,H2918,Industries
+1571,H2919,Environnement
+1572,H2919,Industries
+1573,H2919,Maintenance
+1574,H2920,Industries
+1575,H2920,Recherche
+1576,H2921,Automobile
+1577,H2921,Industries
+1578,H2922,Artisanat d'art
+1579,H2922,Industrie - Métallurgie
+1580,H2923,Industrie - Métallurgie
+1581,H2923,Industrie - Électronique
+1582,H2924,Industrie - Métallurgie
+1583,H2924,Industries
+1584,H2924,Maintenance
+1585,H2925,Industrie - Métallurgie
+1586,H3101,Papier
+1587,H3102,Papier
+1588,H3103,Papier
+1589,H3104,Papier
+1590,H3105,Papier
+1591,H3106,Imprimerie
+1592,H3106,Papier
+1593,H3201,Industrie - Chimie
+1594,H3202,Industrie - Chimie
+1595,H3203,Industries
+1596,H3204,Automobile
+1597,H3204,Industrie - Chimie
+1598,H3205,Industrie - Chimie
+1599,H3301,Industrie - Alimentaire
+1600,H3301,Industries
+1601,H3301,Médical
+1602,H3302,Industrie - Alimentaire
+1603,H3303,Industrie - Alimentaire
+1604,H3303,Industrie - Chimie
+1605,H3303,Médical
+1606,H3303,Papier
+1607,H3304,Industries
+1608,H3305,Industrie - Alimentaire
+1609,H3306,"Agriculture, sylviculture"
+1610,H3306,Industrie - Alimentaire
+1611,H3307,Industrie - Alimentaire
+1612,H3308,Industries
+1613,H3308,Logistique et courrier
+1614,H3308,Transport
+1615,H3309,Industries
+1616,H3401,Industries
+1617,H3402,Industries
+1618,H3403,Industrie - Métallurgie
+1619,H3404,BTP
+1620,H3404,Industrie - Chimie
+1621,H3404,Industrie - Métallurgie
+1622,H3404,Industries
+1623,H3405,Artisanat d'art
+1624,H3405,Industries
+1625,H3406,Industries
+1626,H3407,Artisanat d'art
+1627,H3407,Industrie - Métallurgie
+1628,H3408,Artisanat d'art
+1629,H3408,Industrie - Métallurgie
+1630,H3409,Industrie - Métallurgie
+1631,H3409,Industries
+1632,H3410,Industrie - Métallurgie
+1633,H3411,Automobile
+1634,H3411,Industrie - Bois
+1635,H3411,Industrie - Métallurgie
+1636,H3411,Industries
+1637,I1101,BTP
+1638,I1102,Industries
+1639,I1102,Maintenance
+1640,I1103,Automobile
+1641,I1104,BTP
+1642,I1104,Télécommunication
+1643,I1105,Immobilier
+1644,I1105,Transport
+1645,I1105,Énergie
+1646,I1106,Informatique
+1647,I1106,Maintenance
+1648,I1106,Télécommunication
+1649,I1107,Maintenance
+1650,I1108,Commerce de gros
+1651,I1108,Transport
+1652,I1109,Automobile
+1653,I1110,"Agriculture, sylviculture"
+1654,I1110,Automobile
+1655,I1111,Automobile
+1656,I1111,Transport
+1657,I1112,Automobile
+1658,I1113,Automobile
+1659,I1114,Automobile
+1660,I1115,Automobile
+1661,I1116,Automobile
+1662,I1116,Transport
+1663,I1117,Automobile
+1664,I1118,Automobile
+1665,I1119,Automobile
+1666,I1120,Hôtellerie
+1667,I1120,Tourisme
+1668,I1121,Industries
+1669,I1121,Maintenance
+1670,I1121,Énergie
+1671,I1122,BTP
+1672,I1123,Sécurité
+1673,I1201,Communication et marketing
+1674,I1202,Maintenance
+1675,I1202,Nettoyage
+1676,I1202,Service public
+1677,I1203,Maintenance
+1678,I1204,Nettoyage
+1679,I1205,Maintenance
+1680,I1206,Communication et marketing
+1681,I1206,Maintenance
+1682,I1206,Service public
+1683,I1207,Communication et marketing
+1684,I1207,Maintenance
+1685,I1207,Service public
+1686,I1208,Transport
+1687,I1209,Communication et marketing
+1688,I1209,Informatique
+1689,I1210,Hôtellerie
+1690,I1210,Maintenance
+1691,I1210,Tourisme
+1692,I1211,Automobile
+1693,I1212,Industries
+1694,I1212,Maintenance
+1695,I1301,Industries
+1696,I1301,Maintenance
+1697,I1302,Industries
+1698,I1302,Maintenance
+1699,I1303,Maintenance
+1700,I1304,Industries
+1701,I1304,Maintenance
+1702,I1304,Énergie
+1703,I1305,Industrie - Électronique
+1704,I1305,Industries
+1705,I1305,Maintenance
+1706,I1305,Énergie
+1707,I1306,Industries
+1708,I1306,Maintenance
+1709,I1307,Commerce de détail
+1710,I1307,Second Œuvre
+1711,I1307,Télécommunication
+1712,I1308,BTP
+1713,I1308,Industries
+1714,I1308,Maintenance
+1715,I1308,Énergie
+1716,I1309,Industries
+1717,I1309,Énergie
+1718,I1310,Industries
+1719,I1310,Maintenance
+1720,I1311,Télécommunication
+1721,I1312,Télécommunication
+1722,I1313,Industries
+1723,I1313,Maintenance
+1724,I1314,Télécommunication
+1725,I1315,Télécommunication
+1726,I1316,BTP
+1727,I1316,Industries
+1728,I1316,Maintenance
+1729,I1317,Télécommunication
+1730,I1318,Industries
+1731,I1318,Maintenance
+1732,I1319,Télécommunication
+1733,I1320,Industries
+1734,I1320,Télécommunication
+1735,I1321,Industries
+1736,I1321,Maintenance
+1737,I1321,Nettoyage
+1738,I1321,Énergie
+1739,I1322,Banque
+1740,I1322,Sécurité
+1741,I1322,Transport
+1742,I1323,Maintenance
+1743,I1323,Transport
+1744,I1324,Industries
+1745,I1324,Maintenance
+1746,I1325,Maintenance
+1747,I1325,Second Œuvre
+1748,I1326,Industries
+1749,I1326,Maintenance
+1750,I1327,Industries
+1751,I1327,Maintenance
+1752,I1327,Médical
+1753,I1327,Service public
+1754,I1328,"Agriculture, sylviculture"
+1755,I1328,Environnement
+1756,I1328,Service public
+1757,I1329,Audiovisuel
+1758,I1329,Maintenance
+1759,I1329,Spectacle
+1760,I1330,Télécommunication
+1761,I1331,Animation et loisir
+1762,I1331,Maintenance
+1763,I1332,Industries
+1764,I1332,Maintenance
+1765,I1333,Industries
+1766,I1333,Maintenance
+1767,I1334,Défense
+1768,I1334,Industrie - Électronique
+1769,I1334,Industries
+1770,I1334,Transport
+1771,I1335,Industries
+1772,I1335,Maintenance
+1773,I1335,Énergie
+1774,I1336,Industries
+1775,I1336,Maintenance
+1776,I1336,Transport
+1777,I1401,Informatique
+1778,I1401,Télécommunication
+1779,I1402,Commerce de détail
+1780,I1402,Grande distribution
+1781,I1402,Maintenance
+1782,I1403,Informatique
+1783,I1404,Informatique
+1784,I1405,Informatique
+1785,I1406,Informatique
+1786,I1407,Informatique
+1787,I1407,Télécommunication
+1788,I1408,Maintenance
+1789,I1409,Informatique
+1790,I1409,Maintenance
+1791,I1410,Service à la personne
+1792,I1501,BTP
+1793,I1501,Environnement
+1794,I1501,Industries
+1795,I1501,Maintenance
+1796,I1501,Énergie
+1797,I1502,BTP
+1798,I1502,Maintenance
+1799,I1503,BTP
+1800,I1503,Environnement
+1801,I1503,Maintenance
+1802,I1503,Nettoyage
+1803,I1503,Normes
+1804,I1503,Recherche
+1805,I1504,Environnement
+1806,I1504,Industries
+1807,I1504,Énergie
+1808,I1505,Environnement
+1809,I1505,Industries
+1810,I1505,Énergie
+1811,I1506,BTP
+1812,I1506,Environnement
+1813,I1506,Industries
+1814,I1506,Nettoyage
+1815,I1506,Énergie
+1816,I1507,Environnement
+1817,I1507,Industries
+1818,I1507,Énergie
+1819,I1508,BTP
+1820,I1508,Environnement
+1821,I1509,Recherche
+1822,I1510,Recherche
+1823,I1511,BTP
+1824,I1511,Environnement
+1825,I1511,Industries
+1826,I1511,Nettoyage
+1827,I1511,Énergie
+1828,I1512,BTP
+1829,I1512,Environnement
+1830,I1512,Industries
+1831,I1512,Nettoyage
+1832,I1512,Énergie
+1833,I1513,BTP
+1834,I1513,Recherche
+1835,I1514,BTP
+1836,I1514,Environnement
+1837,I1514,Recherche
+1838,I1514,Étude des sols et des bâtiments
+1839,I1601,Industries
+1840,I1601,Maintenance
+1841,I1602,Maintenance
+1842,I1602,Transport
+1843,I1603,"Agriculture, sylviculture"
+1844,I1603,"Conseil, orientation et formation"
+1845,I1603,Enseignement
+1846,I1603,Maintenance
+1847,I1603,"Élevage, pêche"
+1848,I1604,Automobile
+1849,I1605,Industrie - Métallurgie
+1850,I1605,Industries
+1851,I1605,Maintenance
+1852,I1606,Automobile
+1853,I1607,Automobile
+1854,I1607,Commerce de détail
+1855,I1607,Enseignement
+1856,I1607,Maintenance
+1857,I1607,Sport
+1858,I1608,Automobile
+1859,I1609,Automobile
+1860,I1610,Automobile
+1861,I1611,Automobile
+1862,I1612,Automobile
+1863,I1613,Automobile
+1864,I1613,Maintenance
+1865,I1614,Automobile
+1866,I1615,Automobile
+1867,I1616,BTP
+1868,I1616,Industries
+1869,I1616,Maintenance
+1870,I1617,Automobile
+1871,I1618,Enseignement
+1872,I1618,Maintenance
+1873,I1619,Automobile
+1874,I1620,Industries
+1875,I1620,Maintenance
+1876,I1621,Automobile
+1877,I1622,Automobile
+1878,I1623,Automobile
+1879,I1624,Automobile
+1880,I1625,Automobile
+1881,I1626,Automobile
+1882,I1627,Automobile
+1883,I1628,Automobile
+1884,I1628,Commerce de détail
+1885,I1629,Automobile
+1886,I1630,Automobile
+1887,I1631,Automobile
+1888,I1632,Automobile
+1889,I1632,Maintenance
+1890,I1633,Industries
+1891,I1633,Maintenance
+1892,I1634,Industrie - Métallurgie
+1893,I1634,Industries
+1894,I1634,Maintenance
+1895,I1635,Maintenance
+1896,I1636,Maintenance
+1897,I1637,Automobile
+1898,I1637,Maintenance
+1899,I1637,Tourisme
+1900,J1101,Médical
+1901,J1102,Médical
+1902,J1103,Médical
+1903,J1104,Médical
+1904,J1105,Médical
+1905,J1106,Industries
+1906,J1106,Médical
+1907,J1106,Recherche
+1908,J1107,Médical
+1909,J1107,Service public
+1910,J1108,Médical
+1911,J1109,Médical
+1912,J1110,Médical
+1913,J1111,Médical
+1914,J1112,Médical
+1915,J1113,Médical
+1916,J1114,Médical
+1917,J1115,Médical
+1918,J1116,Médical
+1919,J1117,Médical
+1920,J1118,Médical
+1921,J1119,Médical
+1922,J1120,Médical
+1923,J1121,Médical
+1924,J1122,Médical
+1925,J1123,Médical
+1926,J1124,Médical
+1927,J1125,Médical
+1928,J1126,Médical
+1929,J1127,Médical
+1930,J1128,Médical
+1931,J1129,Médical
+1932,J1130,Médical
+1933,J1131,Médical
+1934,J1131,Recherche
+1935,J1132,Médical
+1936,J1133,Médical
+1937,J1134,Médical
+1938,J1135,Médical
+1939,J1136,Médical
+1940,J1136,Social
+1941,J1137,Médical
+1942,J1138,Médical
+1943,J1139,Médical
+1944,J1140,Médical
+1945,J1141,Médical
+1946,J1142,Médical
+1947,J1201,Médical
+1948,J1202,Médical
+1949,J1203,Soins animaliers
+1950,J1204,Médical
+1951,J1301,Médical
+1952,J1301,Social
+1953,J1302,Médical
+1954,J1303,Médical
+1955,J1304,Médical
+1956,J1304,Social
+1957,J1305,Médical
+1958,J1305,Transport
+1959,J1306,Médical
+1960,J1307,Médical
+1961,J1308,Médical
+1962,J1309,Médical
+1963,J1310,Transport
+1964,J1311,Médical
+1965,J1311,Transport
+1966,J1312,Médical
+1967,J1401,Médical
+1968,J1402,Médical
+1969,J1403,Médical
+1970,J1404,Médical
+1971,J1405,Commerce de détail
+1972,J1405,Médical
+1973,J1406,Médical
+1974,J1407,Médical
+1975,J1408,Médical
+1976,J1409,Médical
+1977,J1410,Médical
+1978,J1411,Médical
+1979,J1412,Médical
+1980,J1413,Médical
+1981,J1414,Enseignement
+1982,J1414,Médical
+1983,J1414,Sport
+1984,J1415,Enseignement
+1985,J1415,Médical
+1986,J1415,Social
+1987,J1416,Médical
+1988,J1501,Médical
+1989,J1501,Social
+1990,J1502,Médical
+1991,J1503,Médical
+1992,J1504,Médical
+1993,J1505,Médical
+1994,J1506,Médical
+1995,J1506,Social
+1996,J1507,Médical
+1997,J1507,Social
+1998,J1508,Médical
+1999,J1509,Médical
+2000,J1510,Médical
+2001,J1510,Social
+2002,J1511,Médical
+2003,J1512,Médical
+2004,K1101,Social
+2005,K1102,Activités juridiques
+2006,K1102,Social
+2007,K1103,Social
+2008,K1104,Médical
+2009,K1105,Médical
+2010,K1106,Service à la personne
+2011,K1107,"Conseil, orientation et formation"
+2012,K1108,Social
+2013,K1109,Médical
+2014,K1110,Activités juridiques
+2015,K1110,Social
+2016,K1111,Médical
+2017,K1112,Médical
+2018,K1113,Médical
+2019,K1114,Médical
+2020,K1114,Social
+2021,K1201,Social
+2022,K1202,Social
+2023,K1203,Environnement
+2024,K1203,Social
+2025,K1204,Social
+2026,K1205,Social
+2027,K1206,Animation et loisir
+2028,K1207,Social
+2029,K1208,Social
+2030,K1209,Social
+2031,K1210,Service public
+2032,K1210,Social
+2033,K1211,Social
+2034,K1212,Service public
+2035,K1212,Social
+2036,K1213,Artisanat d'art
+2037,K1213,Social
+2038,K1214,Médical
+2039,K1215,Social
+2040,K1216,Service à la personne
+2041,K1216,Social
+2042,K1217,Social
+2043,K1218,Social
+2044,K1219,Animation et loisir
+2045,K1219,Social
+2046,K1220,Médical
+2047,K1220,Social
+2048,K1221,Social
+2049,K1222,Social
+2050,K1223,"Conseil, orientation et formation"
+2051,K1223,Sécurité
+2052,K1224,"Conseil, orientation et formation"
+2053,K1224,Social
+2054,K1225,Social
+2055,K1226,Social
+2056,K1227,Sécurité
+2057,K1228,Social
+2058,K1228,Édition
+2059,K1229,Gestion administrative
+2060,K1230,Social
+2061,K1301,Médical
+2062,K1301,Social
+2063,K1302,Social
+2064,K1303,Service à la personne
+2065,K1303,Social
+2066,K1304,Service à la personne
+2067,K1305,Social
+2068,K1306,Social
+2069,K1307,Social
+2070,K1308,Enseignement
+2071,K1308,Service public
+2072,K1309,Social
+2073,K1310,Social
+2074,K1311,Service à la personne
+2075,K1312,Social
+2076,K1313,Service à la personne
+2077,K1313,Social
+2078,K1314,Service à la personne
+2079,K1314,Social
+2080,K1401,Service public
+2081,K1402,Médical
+2082,K1402,Service public
+2083,K1403,Médical
+2084,K1403,Social
+2085,K1404,Service public
+2086,K1405,Service public
+2087,K1406,Service public
+2088,K1407,Social
+2089,K1408,Service à la personne
+2090,K1409,Service public
+2091,K1410,Service public
+2092,K1411,Médical
+2093,K1411,Service public
+2094,K1411,Soins animaliers
+2095,K1412,Activités juridiques
+2096,K1412,Service public
+2097,K1413,Animation et loisir
+2098,K1413,Médical
+2099,K1413,Service public
+2100,K1413,Social
+2101,K1414,Médical
+2102,K1414,Service public
+2103,K1415,Médical
+2104,K1416,Service public
+2105,K1417,Gestion administrative
+2106,K1418,Service public
+2107,K1419,Gestion administrative
+2108,K1420,Service public
+2109,K1421,Médical
+2110,K1421,Service public
+2111,K1422,Service public
+2112,K1423,Service public
+2113,K1424,Service public
+2114,K1425,Service public
+2115,K1501,Service public
+2116,K1502,Service public
+2117,K1503,Service public
+2118,K1504,Service public
+2119,K1505,Service public
+2120,K1506,Service public
+2121,K1507,Service public
+2122,K1508,Service public
+2123,K1509,Service public
+2124,K1510,Service public
+2125,K1511,Service public
+2126,K1512,Service public
+2127,K1513,Comptabilité
+2128,K1513,Service public
+2129,K1514,Service public
+2130,K1515,Service public
+2131,K1601,Culture et patrimoine
+2132,K1601,Industries
+2133,K1601,Médical
+2134,K1602,Culture et patrimoine
+2135,K1603,Culture et patrimoine
+2136,K1604,Culture et patrimoine
+2137,K1605,Animation et loisir
+2138,K1605,Culture et patrimoine
+2139,K1606,Culture et patrimoine
+2140,K1607,Culture et patrimoine
+2141,K1608,Culture et patrimoine
+2142,K1609,Culture et patrimoine
+2143,K1610,Culture et patrimoine
+2144,K1611,Audiovisuel
+2145,K1611,Édition
+2146,K1612,Culture et patrimoine
+2147,K1613,Culture et patrimoine
+2148,K1614,Culture et patrimoine
+2149,K1701,Défense
+2150,K1702,Sécurité
+2151,K1703,Défense
+2152,K1704,Service public
+2153,K1704,Sécurité
+2154,K1705,Sécurité
+2155,K1706,Défense
+2156,K1707,Sécurité
+2157,K1708,Service public
+2158,K1709,Sécurité
+2159,K1710,Sécurité
+2160,K1711,Sécurité
+2161,K1712,Défense
+2162,K1713,Défense
+2163,K1714,Défense
+2164,K1715,Défense
+2165,K1716,Sécurité
+2166,K1717,Défense
+2167,K1718,Défense
+2168,K1718,Maintenance
+2169,K1719,Sécurité
+2170,K1720,Sécurité
+2171,K1721,Sécurité
+2172,K1722,Défense
+2173,K1722,Service public
+2174,K1722,Sécurité
+2175,K1722,Transport
+2176,K1723,Défense
+2177,K1724,Défense
+2178,K1725,Défense
+2179,K1726,Animation et loisir
+2180,K1726,Sécurité
+2181,K1727,Défense
+2182,K1728,Animation et loisir
+2183,K1728,Sécurité
+2184,K1729,Défense
+2185,K1729,Industrie - Chimie
+2186,K1729,Sécurité
+2187,K1730,Défense
+2188,K1731,Défense
+2189,K1732,Défense
+2190,K1733,Défense
+2191,K1734,Défense
+2192,K1735,Défense
+2193,K1736,Défense
+2194,K1737,Défense
+2195,K1738,Défense
+2196,K1739,Défense
+2197,K1740,Défense
+2198,K1740,Recherche
+2199,K1740,Transport
+2200,K1741,Défense
+2201,K1742,Défense
+2202,K1743,Sécurité
+2203,K1744,Sécurité
+2204,K1745,Service public
+2205,K1745,Sécurité
+2206,K1746,Service public
+2207,K1747,Sécurité
+2208,K1748,Défense
+2209,K1801,"Conseil, orientation et formation"
+2210,K1801,Social
+2211,K1802,Service public
+2212,K1803,Culture et patrimoine
+2213,K1803,Environnement
+2214,K1803,Tourisme
+2215,K1804,Gestion administrative
+2216,K1804,Social
+2217,K1805,Service public
+2218,K1805,Social
+2219,K1806,Architecture
+2220,K1806,Social
+2221,K1807,Architecture
+2222,K1808,Culture et patrimoine
+2223,K1808,Social
+2224,K1809,Service public
+2225,K1810,Service public
+2226,K1810,Social
+2227,K1811,Environnement
+2228,K1811,Service public
+2229,K1811,Étude des sols et des bâtiments
+2230,K1812,"Conseil, orientation et formation"
+2231,K1812,Social
+2232,K1813,Environnement
+2233,K1814,Ressources humaines
+2234,K1814,Social
+2235,K1815,Service public
+2236,K1816,Commerce de détail
+2237,K1816,Communication et marketing
+2238,K1816,Service public
+2239,K1816,Tourisme
+2240,K1817,Service public
+2241,K1901,Activités juridiques
+2242,K1902,Activités juridiques
+2243,K1903,Activités juridiques
+2244,K1904,Activités juridiques
+2245,K1905,Activités juridiques
+2246,K1906,Activités juridiques
+2247,K1907,Artisanat d'art
+2248,K1907,Commerce de détail
+2249,K1908,Activités juridiques
+2250,K1909,Activités juridiques
+2251,K1909,Service public
+2252,K1910,Activités juridiques
+2253,K1910,Comptabilité
+2254,K1910,Finance
+2255,K1910,Service public
+2256,K1911,Activités juridiques
+2257,K1911,Comptabilité
+2258,K1912,Activités juridiques
+2259,K1913,Activités juridiques
+2260,K1913,Service public
+2261,K1914,Activités juridiques
+2262,K1915,Activités juridiques
+2263,K1916,Activités juridiques
+2264,K1916,Service public
+2265,K2101,"Conseil, orientation et formation"
+2266,K2101,Ressources humaines
+2267,K2102,"Conseil, orientation et formation"
+2268,K2103,Enseignement
+2269,K2104,Enseignement
+2270,K2104,Service public
+2271,K2105,Enseignement
+2272,K2106,Enseignement
+2273,K2107,Enseignement
+2274,K2108,Enseignement
+2275,K2109,Enseignement
+2276,K2110,Automobile
+2277,K2110,"Conseil, orientation et formation"
+2278,K2111,"Conseil, orientation et formation"
+2279,K2112,"Conseil, orientation et formation"
+2280,K2113,Social
+2281,K2114,"Conseil, orientation et formation"
+2282,K2115,Enseignement
+2283,K2116,Commerce de détail
+2284,K2116,"Conseil, orientation et formation"
+2285,K2117,Enseignement
+2286,K2118,Enseignement
+2287,K2119,"Conseil, orientation et formation"
+2288,K2120,Enseignement
+2289,K2121,Enseignement
+2290,K2122,Enseignement
+2291,K2123,Enseignement
+2292,K2124,"Conseil, orientation et formation"
+2293,K2125,Culture et patrimoine
+2294,K2125,Recherche
+2295,K2126,"Conseil, orientation et formation"
+2296,K2126,Ressources humaines
+2297,K2127,Enseignement
+2298,K2128,"Conseil, orientation et formation"
+2299,K2129,Enseignement
+2300,K2129,Social
+2301,K2130,Enseignement
+2302,K2131,Enseignement
+2303,K2132,"Conseil, orientation et formation"
+2304,K2133,Recherche
+2305,K2134,Recherche
+2306,K2135,Recherche
+2307,K2136,Enseignement
+2308,K2137,Enseignement
+2309,K2138,"Conseil, orientation et formation"
+2310,K2139,"Conseil, orientation et formation"
+2311,K2140,Culture et patrimoine
+2312,K2140,Recherche
+2313,K2141,"Conseil, orientation et formation"
+2314,K2142,"Conseil, orientation et formation"
+2315,K2143,Recherche
+2316,K2144,Enseignement
+2317,K2145,"Conseil, orientation et formation"
+2318,K2146,Enseignement
+2319,K2147,Enseignement
+2320,K2148,"Conseil, orientation et formation"
+2321,K2201,Industrie - Textile et mode
+2322,K2202,Nettoyage
+2323,K2203,Nettoyage
+2324,K2204,Nettoyage
+2325,K2205,Nettoyage
+2326,K2301,Environnement
+2327,K2301,Maintenance
+2328,K2302,Environnement
+2329,K2303,Environnement
+2330,K2304,Environnement
+2331,K2305,Nettoyage
+2332,K2306,Environnement
+2333,K2306,Industries
+2334,K2307,Environnement
+2335,K2308,Environnement
+2336,K2309,Environnement
+2337,K2310,Environnement
+2338,K2311,Environnement
+2339,K2312,Environnement
+2340,K2312,Nettoyage
+2341,K2313,Environnement
+2342,K2313,Service public
+2343,K2313,Sécurité
+2344,K2314,Environnement
+2345,K2314,Maintenance
+2346,K2315,Service public
+2347,K2315,Sécurité
+2348,K2316,Environnement
+2349,K2317,Environnement
+2350,K2318,Environnement
+2351,K2319,Nettoyage
+2352,K2320,Environnement
+2353,K2321,Environnement
+2354,K2322,Environnement
+2355,K2323,Environnement
+2356,K2323,Maintenance
+2357,K2323,Nettoyage
+2358,K2324,Commerce de détail
+2359,K2324,Environnement
+2360,K2325,Environnement
+2361,K2325,"Élevage, pêche"
+2362,K2325,Énergie
+2363,K2326,Environnement
+2364,K2326,Sécurité
+2365,K2401,Recherche
+2366,K2402,Recherche
+2367,K2403,Industries
+2368,K2403,Médical
+2369,K2403,Recherche
+2370,K2404,Industries
+2371,K2404,Recherche
+2372,K2405,Médical
+2373,K2405,Recherche
+2374,K2406,Industries
+2375,K2406,Médical
+2376,K2406,Recherche
+2377,K2407,Recherche
+2378,K2408,Recherche
+2379,K2409,Recherche
+2380,K2410,Recherche
+2381,K2411,Culture et patrimoine
+2382,K2411,Enseignement
+2383,K2412,Recherche
+2384,K2412,"Élevage, pêche"
+2385,K2412,Énergie
+2386,K2413,Environnement
+2387,K2413,Recherche
+2388,K2414,Culture et patrimoine
+2389,K2414,Recherche
+2390,K2415,Culture et patrimoine
+2391,K2415,Recherche
+2392,K2416,Recherche
+2393,K2417,Environnement
+2394,K2417,Recherche
+2395,K2418,Environnement
+2396,K2418,Recherche
+2397,K2419,"Agriculture, sylviculture"
+2398,K2419,Environnement
+2399,K2419,Industrie - Alimentaire
+2400,K2419,Recherche
+2401,K2420,Environnement
+2402,K2420,Recherche
+2403,K2421,Environnement
+2404,K2421,Recherche
+2405,K2501,Immobilier
+2406,K2502,Sécurité
+2407,K2503,Sécurité
+2408,K2504,Sécurité
+2409,K2505,Sécurité
+2410,K2506,Banque
+2411,K2506,Sécurité
+2412,K2506,Transport
+2413,K2507,Sécurité
+2414,K2508,Sécurité
+2415,K2509,Sécurité
+2416,K2510,Sécurité
+2417,K2511,Sécurité
+2418,K2512,Sécurité
+2419,K2512,Transport
+2420,K2513,Sécurité
+2421,K2514,Sécurité
+2422,K2601,Service à la personne
+2423,K2602,Service à la personne
+2424,K2603,Service à la personne
+2425,K2604,Service à la personne
+2426,K2605,Service à la personne
+2427,K2606,Service à la personne
+2428,L1101,Animation et loisir
+2429,L1101,Spectacle
+2430,L1102,Spectacle
+2431,L1103,Audiovisuel
+2432,L1103,Communication et marketing
+2433,L1104,Communication et marketing
+2434,L1201,Spectacle
+2435,L1201,Tourisme
+2436,L1202,Spectacle
+2437,L1203,Spectacle
+2438,L1204,Spectacle
+2439,L1205,Spectacle
+2440,L1205,Édition
+2441,L1206,Spectacle
+2442,L1207,Audiovisuel
+2443,L1207,Spectacle
+2444,L1208,Animation et loisir
+2445,L1208,Spectacle
+2446,L1209,Spectacle
+2447,L1210,Spectacle
+2448,L1211,Spectacle
+2449,L1212,Spectacle
+2450,L1213,Spectacle
+2451,L1214,Spectacle
+2452,L1215,Spectacle
+2453,L1216,Spectacle
+2454,L1301,Spectacle
+2455,L1302,Audiovisuel
+2456,L1303,Audiovisuel
+2457,L1303,Spectacle
+2458,L1303,Sport
+2459,L1304,Audiovisuel
+2460,L1305,Spectacle
+2461,L1306,Audiovisuel
+2462,L1306,Spectacle
+2463,L1307,Spectacle
+2464,L1308,Audiovisuel
+2465,L1309,Audiovisuel
+2466,L1310,Spectacle
+2467,L1311,Spectacle
+2468,L1312,Spectacle
+2469,L1313,Audiovisuel
+2470,L1314,Édition
+2471,L1315,Audiovisuel
+2472,L1316,Audiovisuel
+2473,L1316,Édition
+2474,L1317,Audiovisuel
+2475,L1317,Spectacle
+2476,L1318,Audiovisuel
+2477,L1319,Audiovisuel
+2478,L1319,Édition
+2479,L1320,Audiovisuel
+2480,L1320,Édition
+2481,L1401,Sport
+2482,L1402,Sport
+2483,L1403,Sport
+2484,L1403,"Élevage, pêche"
+2485,L1501,Spectacle
+2486,L1501,Tourisme
+2487,L1502,Audiovisuel
+2488,L1502,Spectacle
+2489,L1503,Spectacle
+2490,L1504,Spectacle
+2491,L1505,Audiovisuel
+2492,L1506,Spectacle
+2493,L1507,Audiovisuel
+2494,L1508,Édition
+2495,L1509,Audiovisuel
+2496,L1510,Audiovisuel
+2497,L1511,Audiovisuel
+2498,L1511,Spectacle
+2499,L1512,Animation et loisir
+2500,L1512,Audiovisuel
+2501,L1512,Spectacle
+2502,L1513,Animation et loisir
+2503,L1513,Audiovisuel
+2504,L1513,Spectacle
+2505,L1514,Audiovisuel
+2506,L1515,Spectacle
+2507,L1516,Spectacle
+2508,L1517,Spectacle
+2509,L1518,Audiovisuel
+2510,L1518,Spectacle
+2511,L1519,Audiovisuel
+2512,L1519,Spectacle
+2513,L1520,Audiovisuel
+2514,L1520,Spectacle
+2515,L1521,Audiovisuel
+2516,L1521,Spectacle
+2517,L1522,Audiovisuel
+2518,L1523,Spectacle
+2519,L1524,Spectacle
+2520,L1525,Spectacle
+2521,L1526,Spectacle
+2522,L1527,Spectacle
+2523,L1528,Spectacle
+2524,M1101,Commerce de gros
+2525,M1101,Industries
+2526,M1102,Commerce de gros
+2527,M1102,Industries
+2528,M1201,Finance
+2529,M1202,Comptabilité
+2530,M1202,Finance
+2531,M1203,Comptabilité
+2532,M1204,Gestion administrative
+2533,M1205,Comptabilité
+2534,M1205,Finance
+2535,M1206,Comptabilité
+2536,M1207,Comptabilité
+2537,M1208,Comptabilité
+2538,M1208,Finance
+2539,M1209,Gestion administrative
+2540,M1210,Comptabilité
+2541,M1211,Comptabilité
+2542,M1212,Gestion administrative
+2543,M1212,Médical
+2544,M1213,Comptabilité
+2545,M1214,Banque
+2546,M1214,Comptabilité
+2547,M1214,Finance
+2548,M1215,Comptabilité
+2549,M1216,Comptabilité
+2550,M1217,"Conseil, orientation et formation"
+2551,M1217,Gestion administrative
+2552,M1217,Maintenance
+2553,M1218,Environnement
+2554,M1219,Finance
+2555,M1220,Comptabilité
+2556,M1220,Gestion administrative
+2557,M1221,Activités juridiques
+2558,M1221,Comptabilité
+2559,M1221,Finance
+2560,M1221,Gestion administrative
+2561,M1222,Activités juridiques
+2562,M1222,Comptabilité
+2563,M1222,Gestion administrative
+2564,M1223,Comptabilité
+2565,M1223,Finance
+2566,M1223,Gestion administrative
+2567,M1224,Activités juridiques
+2568,M1224,Comptabilité
+2569,M1224,Finance
+2570,M1225,Comptabilité
+2571,M1226,Finance
+2572,M1227,Artisanat d'art
+2573,M1227,Audiovisuel
+2574,M1227,Spectacle
+2575,M1227,Édition
+2576,M1228,Finance
+2577,M1301,Gestion administrative
+2578,M1301,Industries
+2579,M1302,Gestion administrative
+2580,M1302,Industries
+2581,M1302,Service à la personne
+2582,M1302,Social
+2583,M1302,Tourisme
+2584,M1303,Grande distribution
+2585,M1303,Hôtellerie
+2586,M1303,Industries
+2587,M1303,Transport
+2588,M1304,Service public
+2589,M1304,Social
+2590,M1305,Industries
+2591,M1305,Informatique
+2592,M1305,Recherche
+2593,M1306,Environnement
+2594,M1306,Service public
+2595,M1306,Étude des sols et des bâtiments
+2596,M1401,Communication et marketing
+2597,M1402,Gestion administrative
+2598,M1402,Service public
+2599,M1403,Communication et marketing
+2600,M1403,Recherche
+2601,M1403,Service public
+2602,M1404,Communication et marketing
+2603,M1405,Industries
+2604,M1405,Recherche
+2605,M1406,Environnement
+2606,M1406,Gestion administrative
+2607,M1407,Industries
+2608,M1407,Médical
+2609,M1407,Recherche
+2610,M1408,Industries
+2611,M1408,Médical
+2612,M1408,Recherche
+2613,M1409,Recherche
+2614,M1410,Environnement
+2615,M1410,Informatique
+2616,M1411,Environnement
+2617,M1412,"Conseil, orientation et formation"
+2618,M1412,Industries
+2619,M1412,Médical
+2620,M1412,Recherche
+2621,M1412,Ressources humaines
+2622,M1413,Environnement
+2623,M1414,Recherche
+2624,M1415,Gestion administrative
+2625,M1416,Gestion administrative
+2626,M1416,Service public
+2627,M1417,Médical
+2628,M1417,Ressources humaines
+2629,M1418,Communication et marketing
+2630,M1419,Informatique
+2631,M1420,Gestion administrative
+2632,M1420,Service public
+2633,M1421,Communication et marketing
+2634,M1422,Communication et marketing
+2635,M1422,Recherche
+2636,M1422,Service public
+2637,M1423,Gestion administrative
+2638,M1424,Gestion administrative
+2639,M1425,Service public
+2640,M1426,Informatique
+2641,M1427,Gestion administrative
+2642,M1428,Gestion administrative
+2643,M1429,Gestion administrative
+2644,M1430,Commerce de détail
+2645,M1430,Communication et marketing
+2646,M1431,Gestion administrative
+2647,M1432,Gestion administrative
+2648,M1433,Enseignement
+2649,M1433,Recherche
+2650,M1434,Audiovisuel
+2651,M1434,Édition
+2652,M1435,Audiovisuel
+2653,M1435,Édition
+2654,M1501,Ressources humaines
+2655,M1502,Ressources humaines
+2656,M1503,Ressources humaines
+2657,M1504,Ressources humaines
+2658,M1505,Ressources humaines
+2659,M1506,Ressources humaines
+2660,M1507,Comptabilité
+2661,M1507,Ressources humaines
+2662,M1508,Ressources humaines
+2663,M1509,Gestion administrative
+2664,M1509,Ressources humaines
+2665,M1509,Service public
+2666,M1510,Ressources humaines
+2667,M1511,Ressources humaines
+2668,M1512,Gestion administrative
+2669,M1512,Ressources humaines
+2670,M1601,Gestion administrative
+2671,M1602,Service public
+2672,M1603,Logistique et courrier
+2673,M1604,Gestion administrative
+2674,M1605,Gestion administrative
+2675,M1606,Gestion administrative
+2676,M1607,Gestion administrative
+2677,M1608,Comptabilité
+2678,M1609,Médical
+2679,M1610,Gestion administrative
+2680,M1610,Sport
+2681,M1611,Comptabilité
+2682,M1612,Activités juridiques
+2683,M1612,Gestion administrative
+2684,M1613,Gestion administrative
+2685,M1614,Gestion administrative
+2686,M1615,Logistique et courrier
+2687,M1616,Gestion administrative
+2688,M1616,Service à la personne
+2689,M1616,Transport
+2690,M1617,Médical
+2691,M1618,Logistique et courrier
+2692,M1619,Commerce de détail
+2693,M1619,Grande distribution
+2694,M1619,Logistique et courrier
+2695,M1620,Communication et marketing
+2696,M1621,Gestion administrative
+2697,M1621,Ressources humaines
+2698,M1701,Commerce de gros
+2699,M1702,Communication et marketing
+2700,M1703,Communication et marketing
+2701,M1703,Informatique
+2702,M1704,Communication et marketing
+2703,M1705,Communication et marketing
+2704,M1706,Communication et marketing
+2705,M1707,Communication et marketing
+2706,M1708,Communication et marketing
+2707,M1708,Industries
+2708,M1708,Médical
+2709,M1709,Industries
+2710,M1709,Médical
+2711,M1709,Recherche
+2712,M1710,Communication et marketing
+2713,M1710,Industries
+2714,M1710,Médical
+2715,M1710,Recherche
+2716,M1711,Communication et marketing
+2717,M1712,Communication et marketing
+2718,M1713,Industries
+2719,M1713,Médical
+2720,M1714,Communication et marketing
+2721,M1714,Industries
+2722,M1714,Médical
+2723,M1715,Communication et marketing
+2724,M1716,Communication et marketing
+2725,M1717,Communication et marketing
+2726,M1717,Informatique
+2727,M1718,Communication et marketing
+2728,M1719,Communication et marketing
+2729,M1720,Commerce de détail
+2730,M1720,Grande distribution
+2731,M1721,Audiovisuel
+2732,M1721,Édition
+2733,M1722,Édition
+2734,M1801,Informatique
+2735,M1802,Informatique
+2736,M1803,Communication et marketing
+2737,M1803,Informatique
+2738,M1804,Télécommunication
+2739,M1805,Informatique
+2740,M1806,Informatique
+2741,M1807,Défense
+2742,M1807,Informatique
+2743,M1807,Télécommunication
+2744,M1808,Recherche
+2745,M1809,Recherche
+2746,M1810,Informatique
+2747,M1811,Informatique
+2748,M1811,Recherche
+2749,M1812,Informatique
+2750,M1812,Recherche
+2751,M1813,Informatique
+2752,M1814,Informatique
+2753,M1815,Informatique
+2754,M1816,Informatique
+2755,M1816,Télécommunication
+2756,M1817,Informatique
+2757,M1818,Informatique
+2758,M1819,Informatique
+2759,M1819,Recherche
+2760,M1820,Informatique
+2761,M1821,Informatique
+2762,M1822,Informatique
+2763,M1823,Commerce de détail
+2764,M1823,Informatique
+2765,M1824,Informatique
+2766,M1825,Informatique
+2767,M1826,Informatique
+2768,M1826,Télécommunication
+2769,M1827,Informatique
+2770,M1828,Informatique
+2771,M1828,Service public
+2772,M1829,Informatique
+2773,M1829,Télécommunication
+2774,M1830,Informatique
+2775,M1830,Télécommunication
+2776,M1831,Informatique
+2777,M1832,Informatique
+2778,M1833,Informatique
+2779,M1834,Informatique
+2780,M1835,Informatique
+2781,M1835,Télécommunication
+2782,M1836,Informatique
+2783,M1837,Informatique
+2784,M1838,Informatique
+2785,M1839,Informatique
+2786,M1840,Informatique
+2787,M1840,Télécommunication
+2788,M1841,Informatique
+2789,M1842,Informatique
+2790,M1843,Informatique
+2791,M1844,Informatique
+2792,M1844,Recherche
+2793,M1844,Édition
+2794,M1845,Informatique
+2795,M1846,Informatique
+2796,M1846,Télécommunication
+2797,M1847,Informatique
+2798,M1848,Informatique
+2799,M1849,Informatique
+2800,M1850,Informatique
+2801,M1851,Commerce de détail
+2802,M1852,Informatique
+2803,M1853,Informatique
+2804,M1854,Informatique
+2805,M1854,Télécommunication
+2806,M1855,Informatique
+2807,M1856,Industrie - Chimie
+2808,M1856,Industries
+2809,M1856,Informatique
+2810,M1856,Recherche
+2811,M1857,Informatique
+2812,M1857,Télécommunication
+2813,M1858,Informatique
+2814,M1859,Informatique
+2815,M1860,Informatique
+2816,M1861,Informatique
+2817,M1862,Informatique
+2818,M1862,Télécommunication
+2819,M1863,Informatique
+2820,M1864,Informatique
+2821,M1865,Informatique
+2822,M1866,Informatique
+2823,M1867,Informatique
+2824,M1868,Informatique
+2825,M1869,Informatique
+2826,M1870,Informatique
+2827,M1871,Informatique
+2828,M1872,Informatique
+2829,M1873,Informatique
+2830,M1874,Informatique
+2831,M1875,Informatique
+2832,M1876,Informatique
+2833,M1877,Informatique
+2834,M1878,Informatique
+2835,M1879,Informatique
+2836,M1880,Informatique
+2837,M1880,Médical
+2838,M1881,Informatique
+2839,M1882,Informatique
+2840,M1883,Informatique
+2841,M1884,Informatique
+2842,M1885,Télécommunication
+2843,M1886,Informatique
+2844,M1887,Informatique
+2845,M1888,Recherche
+2846,M1889,Informatique
+2847,M1889,Recherche
+2848,M1890,Recherche
+2849,M1891,Recherche
+2850,M1892,Informatique
+2851,M1893,Recherche
+2852,M1894,Informatique
+2853,M1895,Environnement
+2854,M1895,Recherche
+2855,M1895,Service public
+2856,M1896,Télécommunication
+2857,N1101,Commerce de détail
+2858,N1101,Commerce de gros
+2859,N1101,Grande distribution
+2860,N1101,Industries
+2861,N1101,Logistique et courrier
+2862,N1102,Transport
+2863,N1103,Commerce de détail
+2864,N1103,Grande distribution
+2865,N1103,Industries
+2866,N1103,Logistique et courrier
+2867,N1104,Transport
+2868,N1105,Commerce de détail
+2869,N1105,Commerce de gros
+2870,N1105,Grande distribution
+2871,N1105,Industries
+2872,N1105,Logistique et courrier
+2873,N1105,Transport
+2874,N1106,Logistique et courrier
+2875,N1107,Transport
+2876,N1108,BTP
+2877,N1109,Transport
+2878,N1110,Industries
+2879,N1110,Logistique et courrier
+2880,N1111,Transport
+2881,N1112,Commerce de détail
+2882,N1112,Commerce de gros
+2883,N1112,Grande distribution
+2884,N1112,Industries
+2885,N1112,Logistique et courrier
+2886,N1113,Industrie - Alimentaire
+2887,N1113,Logistique et courrier
+2888,N1114,BTP
+2889,N1114,Transport
+2890,N1115,Logistique et courrier
+2891,N1116,Logistique et courrier
+2892,N1201,Logistique et courrier
+2893,N1201,Transport
+2894,N1202,Transport
+2895,N1203,Logistique et courrier
+2896,N1204,Logistique et courrier
+2897,N1205,Logistique et courrier
+2898,N1205,Transport
+2899,N1206,Transport
+2900,N1207,Logistique et courrier
+2901,N1208,Banque
+2902,N1208,Finance
+2903,N1208,Sécurité
+2904,N1208,Transport
+2905,N1209,Logistique et courrier
+2906,N1209,Transport
+2907,N1210,Logistique et courrier
+2908,N1301,Commerce de détail
+2909,N1301,Commerce de gros
+2910,N1301,Grande distribution
+2911,N1301,Industries
+2912,N1301,Logistique et courrier
+2913,N1301,Transport
+2914,N1302,Industries
+2915,N1302,Logistique et courrier
+2916,N1303,Commerce de détail
+2917,N1303,Commerce de gros
+2918,N1303,Grande distribution
+2919,N1303,Logistique et courrier
+2920,N1304,Commerce de détail
+2921,N1304,Commerce de gros
+2922,N1304,Grande distribution
+2923,N1304,Industries
+2924,N1304,Logistique et courrier
+2925,N1305,Logistique et courrier
+2926,N1306,Commerce de détail
+2927,N1306,Commerce de gros
+2928,N1306,Grande distribution
+2929,N1306,Industries
+2930,N1306,Logistique et courrier
+2931,N1307,Logistique et courrier
+2932,N1308,Logistique et courrier
+2933,N2101,Transport
+2934,N2102,Transport
+2935,N2103,Transport
+2936,N2104,Transport
+2937,N2201,Transport
+2938,N2202,Transport
+2939,N2203,Transport
+2940,N2204,Transport
+2941,N2205,Logistique et courrier
+2942,N2205,Transport
+2943,N2206,Animation et loisir
+2944,N2206,Défense
+2945,N2206,Logistique et courrier
+2946,N2206,Sécurité
+2947,N2206,Transport
+2948,N2207,Service à la personne
+2949,N2207,Transport
+2950,N2208,Transport
+2951,N2209,Logistique et courrier
+2952,N2210,Transport
+2953,N2211,Logistique et courrier
+2954,N3101,Transport
+2955,N3102,Transport
+2956,N3103,Transport
+2957,N3104,Transport
+2958,N3105,Transport
+2959,N3106,Défense
+2960,N3106,Sécurité
+2961,N3106,Tourisme
+2962,N3106,Transport
+2963,N3107,Maintenance
+2964,N3107,Nettoyage
+2965,N3107,Transport
+2966,N3108,Animation et loisir
+2967,N3108,Tourisme
+2968,N3108,Transport
+2969,N3109,Transport
+2970,N3110,Transport
+2971,N3111,Transport
+2972,N3112,Transport
+2973,N3113,Transport
+2974,N3113,"Élevage, pêche"
+2975,N3114,Transport
+2976,N3114,"Élevage, pêche"
+2977,N3115,Animation et loisir
+2978,N3115,Tourisme
+2979,N3115,Transport
+2980,N3116,Transport
+2981,N3116,"Élevage, pêche"
+2982,N3117,Transport
+2983,N3117,"Élevage, pêche"
+2984,N3118,Transport
+2985,N3118,"Élevage, pêche"
+2986,N3201,Transport
+2987,N3202,Transport
+2988,N3203,Logistique et courrier
+2989,N3204,Logistique et courrier
+2990,N3205,Transport
+2991,N3206,Logistique et courrier
+2992,N3207,Animation et loisir
+2993,N3207,Tourisme
+2994,N3207,Transport
+2995,N3208,Transport
+2996,N3209,Logistique et courrier
+2997,N3210,Logistique et courrier
+2998,N3211,Animation et loisir
+2999,N3211,Maintenance
+3000,N3211,Transport
+3001,N4101,Transport
+3002,N4102,Service à la personne
+3003,N4102,Transport
+3004,N4103,Transport
+3005,N4104,Logistique et courrier
+3006,N4105,Logistique et courrier
+3007,N4105,Transport
+3008,N4106,Transport
+3009,N4107,BTP
+3010,N4107,Transport
+3011,N4108,Service à la personne
+3012,N4108,Social
+3013,N4108,Transport
+3014,N4109,Transport
+3015,N4110,Informatique
+3016,N4111,Défense
+3017,N4111,Transport
+3018,N4112,Service à la personne
+3019,N4112,Transport
+3020,N4113,Transport
+3021,N4114,Transport
+3022,N4115,Transport
+3023,N4116,Transport
+3024,N4117,Animation et loisir
+3025,N4117,Service public
+3026,N4117,Tourisme
+3027,N4117,"Élevage, pêche"
+3028,N4118,Environnement
+3029,N4118,Transport
+3030,N4119,Service public
+3031,N4119,Transport
+3032,N4120,Transport
+3033,N4121,Transport
+3034,N4122,Transport
+3035,N4123,Service à la personne
+3036,N4123,Transport
+3037,N4124,Service à la personne
+3038,N4124,Transport
+3039,N4125,Transport
+3040,N4126,Transport
+3041,N4127,Tourisme
+3042,N4127,Transport
+3043,N4128,Transport
+3044,N4129,Transport
+3045,N4130,Transport
+3046,N4131,Transport
+3047,N4132,Transport
+3048,N4133,"Agriculture, sylviculture"
+3049,N4133,Transport
+3050,N4134,Transport
+3051,N4135,Transport
+3052,N4201,Transport
+3053,N4202,Transport
+3054,N4203,Transport
+3055,N4204,Transport
+3056,N4205,Transport
+3057,N4301,Transport
+3058,N4302,Transport
+3059,N4303,Transport
+3060,N4304,Transport
+3061,N4305,Service public
+3062,N4305,Transport
+3063,N4306,Transport
+3064,N4401,Transport
+3065,N4402,Sport
+3066,N4403,Transport
+3067,N4404,Transport
+3068,N4405,Transport
+3069,N4406,Transport

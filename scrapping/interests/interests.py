@@ -8,7 +8,7 @@ if response.status_code == 200:
         pd.DataFrame(response.json())
         .astype({"code": int, "label": str, "labelUrl": str})
     )
-    df.rename(columns={"code": "interestID", "label": "interestLabel", "labelUrl": "interestLabelUrl"}, inplace=True)
+    df.rename(columns={"code": "interest_id", "label": "interestLabel", "labelUrl": "interestLabelUrl"}, inplace=True)
     df.to_csv("interests.csv", index=False)
     df.to_parquet("interests.parquet", index=False)
 

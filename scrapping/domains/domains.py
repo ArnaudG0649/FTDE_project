@@ -9,7 +9,7 @@ response = requests.get("https://candidat.francetravail.fr/gw-metierscope/domain
 if response.status_code == 200:
     # df = pd.DataFrame(response.json()).drop(columns=["labelUrl"]).astype({"code": int, "label": str}).sort_values("code")
     df = pd.DataFrame(response.json()).astype({"code": int, "label": str, "labelUrl": str}).sort_values("code")
-    df = df.rename(columns={"code": "DomainID"})
+    df = df.rename(columns={"code": "domain_id"})
     df.to_csv("domains.csv", index=False)
     df.to_parquet("domains.parquet", index=False)
 

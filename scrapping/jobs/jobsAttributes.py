@@ -72,7 +72,7 @@ def fetch_job_attributes(rome_code: str, session: requests.Session) -> dict:
     return row
 
 
-def main():
+def download_jobs_attributes():
     base_dir = Path(__file__).parent if "__file__" in globals() else Path(".")
     csv_path = base_dir / "jobs.csv"
     parquet_path = base_dir / "jobs.parquet"
@@ -131,7 +131,6 @@ def main():
     df_final.to_csv(csv_path, index=False)
     df_final.to_parquet(parquet_path, index=False)
     print(f"Mise à jour terminée. Fichiers enregistrés dans {csv_path} et {parquet_path}.")
-
-
+    
 if __name__ == "__main__":
-    main()
+    download_jobs_attributes()

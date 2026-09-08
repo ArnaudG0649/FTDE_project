@@ -5,11 +5,11 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 test_mode = True
-n=3000
+n=1000
 
 df_department = pd.read_csv("../../departments/departments_france.csv")
 df_jobs = pd.read_csv("../jobs/jobs.csv")
-df_cross = df_jobs.merge(df_department, how='cross')[["romeCode", "departmentID"]]
+df_cross = df_jobs.merge(df_department, how='cross')[["romeCode", "departmentId"]]
 
 #On selection n lignes aux hasard pour les tests
 df_cross_test = df_cross.sample(n=n, random_state=42)
