@@ -6,24 +6,10 @@ import os.path as osp
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
-make_csv = True
-data_dir = "scrapping/data"
 
-test_mode = True
-n=300
-
-interests_url = "https://candidat.francetravail.fr/gw-metierscope/interests"
-jobs_alphabetical_url = (
-    "https://candidat.francetravail.fr/gw-metierscope/jobs/groupByFirstLetter"
-)
-domains_url = "https://candidat.francetravail.fr/gw-metierscope/domains"
-domain_url = "https://candidat.francetravail.fr/gw-metierscope/domain"
-url_job = "https://candidat.francetravail.fr/gw-metierscope/job/"
-
-
-def csv_to_parquet(data_dir=data_dir) -> None:
-    departments_file_csv = osp.join(data_dir,"departments.csv")
-    regions_file_csv = osp.join(data_dir,"regions.csv")
+def csv_to_parquet(territories_dir,data_dir) -> None:
+    departments_file_csv = osp.join(territories_dir,"departments.csv")
+    regions_file_csv = osp.join(territories_dir,"regions.csv")
     departments_file_parquet = osp.join(data_dir,"departments.parquet")
     regions_file_parquet= osp.join(data_dir,"regions.parquet")
     pd.read_csv(departments_file_csv) \
@@ -35,7 +21,7 @@ def csv_to_parquet(data_dir=data_dir) -> None:
 
 
 
-def download_interests(url=interests_url,data_dir=data_dir,make_csv=make_csv) -> None:
+def download_interests(url, data_dir, make_csv) -> None:
     response = requests.get(url)
 
     print(f"Downloading interests from {url}")
@@ -59,7 +45,7 @@ def download_interests(url=interests_url,data_dir=data_dir,make_csv=make_csv) ->
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
 
-def download_jobs_id_and_name(url=jobs_alphabetical_url,data_dir=data_dir,make_csv=make_csv) -> None:
+def download_jobs_id_and_name(url, data_dir, make_csv) -> None:
     response = requests.get(url)
 
     print(f"Downloading jobs from {url}")
@@ -76,7 +62,7 @@ def download_jobs_id_and_name(url=jobs_alphabetical_url,data_dir=data_dir,make_c
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
 
-def download_domains(url=domains_url,data_dir=data_dir,make_csv=make_csv) -> None:
+def download_domains(url, data_dir, make_csv) -> None:
 
     print(f"Downloading domains from {url}")
     response = requests.get(url)
@@ -105,7 +91,7 @@ def download_domains(url=domains_url,data_dir=data_dir,make_csv=make_csv) -> Non
         
         
 def fetch_jobs_subdomains(
-    domain_id, label, url_base=domain_url
+    domain_id, label, url_base
 ):
     response = requests.get(f"{url_base}/{domain_id:03d}")
 
@@ -123,7 +109,7 @@ def fetch_jobs_subdomains(
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
         
-def download_jobs_subdomains_extended(url=domain_url,data_dir=data_dir,make_csv=make_csv) -> None:
+def download_jobs_subdomains_extended(url, data_dir, make_csv) -> None:
     print(f"Downloading jobs subdomains relations extended data from {url}/*")
     
     df_domains = pd.read_parquet(osp.join(data_dir, "domains.parquet"))
@@ -137,7 +123,7 @@ def download_jobs_subdomains_extended(url=domain_url,data_dir=data_dir,make_csv=
         df_extended.to_csv(osp.join(data_dir, "jobs_subdomains_extended.csv"), index=False)
     df_extended.to_parquet(osp.join(data_dir, "jobs_subdomains_extended.parquet"), index=False)
     
-def collect_subdomains(data_dir=data_dir,make_csv=make_csv):
+def collect_subdomains(data_dir, make_csv):
     
     df_extended_path=osp.join(data_dir, "jobs_subdomains_extended.parquet")
     df = pd.read_parquet(df_extended_path)[["subDomain", "domain_id"]]
@@ -154,7 +140,7 @@ def collect_subdomains(data_dir=data_dir,make_csv=make_csv):
     df_subdomains.to_parquet(osp.join(data_dir, "subdomains.parquet"),index=False)
 
 
-def collect_jobs_subdomains(data_dir=data_dir,make_csv=make_csv):
+def collect_jobs_subdomains(data_dir, make_csv):
     df_extended_path=osp.join(data_dir, "jobs_subdomains_extended.parquet")
     df_subdomains_path=osp.join(data_dir, "subdomains.parquet")
     
@@ -169,7 +155,7 @@ def collect_jobs_subdomains(data_dir=data_dir,make_csv=make_csv):
     df_jobs_subdomains.to_parquet(osp.join(data_dir,"jobs_subdomains.parquet"), index=False)
     
     
-def fetch_job_attributes(rome_code: str, session: requests.Session, url_base = url_job) -> dict:
+def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) -> dict:
     """
     Récupère les attributs d'un métier à partir des deux API de France Travail (Métierscope) :
     1. {url_base}/job/{romeCode} pour les indicateurs de transitions et statuts d'emploi
@@ -235,7 +221,7 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base = u
     return row
 
 
-def download_jobs_attributes(data_dir=data_dir, url_base=url_job, make_csv=make_csv, test_mode=test_mode, n=n):
+def download_jobs_attributes(data_dir, url_base, make_csv, test_mode, n):
     csv_path = osp.join(data_dir, "jobs.csv")
     parquet_path = osp.join(data_dir, "jobs.parquet")
 
@@ -268,7 +254,7 @@ def download_jobs_attributes(data_dir=data_dir, url_base=url_job, make_csv=make_
                 results[data["romeCode"]] = data
                 completed += 1
                 if completed % 50 == 0 or completed == total:
-                    print(f"Progression : {completed}/{total}")
+                    print(f"Progression : {completed}/{total} ; {completed/total:.2%}")
 
     df_attributes = pd.DataFrame([results[code] for code in rome_codes])
 
@@ -300,7 +286,7 @@ def download_jobs_attributes(data_dir=data_dir, url_base=url_job, make_csv=make_
     print(f"Update completed. Files saved in {csv_path} and {parquet_path}.")
     
     
-def fetch_job_department_attributes(rome_code: str, department_id: str, session: requests.Session, url_base=url_job) -> dict:
+def fetch_job_department_attributes(rome_code: str, department_id: str, session: requests.Session, url_base) -> dict:
     """
     Retrieves the attributes of a job in a department via the France Travail Labour Market API.
     """
@@ -361,7 +347,7 @@ def fetch_job_department_attributes(rome_code: str, department_id: str, session:
     return row
 
 
-def download_jobs_departments(data_dir=data_dir, url_base=url_job, make_csv=make_csv, test_mode=test_mode, n=n):
+def download_jobs_departments(data_dir, url_base, make_csv, test_mode, n):
 
     df_department = pd.read_parquet(osp.join(data_dir, "departments.parquet"))
     df_jobs = pd.read_parquet(osp.join(data_dir, "jobs.parquet"))

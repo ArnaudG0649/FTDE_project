@@ -1,0 +1,13 @@
+make_csv: False
+data_dir: "scrapping/data"
+territories_dir: "scrapping/territories"
+
+
+test_mode: True
+n: 300
+
+interests_url: "https://candidat.francetravail.fr/gw-metierscope/interests"
+jobs_alphabetical_url: "https://candidat.francetravail.fr/gw-metierscope/jobs/groupByFirstLetter"
+domains_url: "https://candidat.francetravail.fr/gw-metierscope/domains"
+domain_url: "https://candidat.francetravail.fr/gw-metierscope/domain"
+url_job: "https://candidat.francetravail.fr/gw-metierscope/job/"
