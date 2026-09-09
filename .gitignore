@@ -1,3 +1,8 @@
 playground.py
 prompt.txt
-scrapping/data
+extract/data
+
+load_gcp/.terraform.lock.hcl
+load_gcp/terraform.tfstate
+load_gcp/terraform.tfstate.backup
+load_gcp/.terraform

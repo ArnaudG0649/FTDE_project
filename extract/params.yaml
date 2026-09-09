@@ -1,6 +1,6 @@
-make_csv: False
-data_dir: "scrapping/data"
-territories_dir: "scrapping/territories"
+make_csv: True
+data_dir: "extract/data"
+territories_dir: "extract/territories"
 
 
 test_mode: True

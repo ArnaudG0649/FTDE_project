@@ -1,6 +1,6 @@
 import yaml
 import os.path as osp
-from scrapping_utils import (
+from extract_utils import (
     csv_to_parquet,
     download_interests,
     download_jobs_id_and_name,
@@ -12,7 +12,7 @@ from scrapping_utils import (
     download_jobs_departments,
 )
 
-with open(osp.join("scrapping", "params.yaml"), "r") as f:
+with open(osp.join("extract", "params.yaml"), "r") as f:
     yaml_data = yaml.load(f, Loader=yaml.FullLoader)
 
 make_csv = yaml_data["make_csv"]

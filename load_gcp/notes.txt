@@ -1,0 +1,13 @@
+0.Install terraform https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+1.create a new project in your google cloud account. In my exemple I have named it "France Travail Data Project".
+2. (Optionnal but higly recommanded) In IAM & Admin/Identity & Access/IAM, grant to yourself (click on the pencil at right of the first line with yout principal and name and click on "add another role") the permissions Storage Admin + Storage Object Admin + BigQuery Admin + BigQuery Data Owner.
+3.In IAM & Admin/Resource Management/Organization, assure that the policies iam.managed.disableServiceAccountCreation, 
+iam.managed.disableServiceAccountKeyCreation and storage.uniformBucketLevelAccess are inactive.
+4.In IAM & Admin/Identity & Access/Service Accounts, create a new service account (I have named it "FTDP_service_account"). Grant the same permissions to this service account stated in step 2.
+5.Still in IAM & Admin/Identity & Access/Service Accounts, click on your new service account, click on Keys/Add key/Create a new key. You can chose json type. The key will be downloaded on your computer by your browser.
+6.Put the json file in a secured file. 
+7. Install Google SDK : https://docs.cloud.google.com/sdk/docs/install-sdk#linux
+8.Set environnment variable : export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json". Verify authentication with gcloud auth application-default login
+admin:///home/arnaudg0649/gcp/france-travail-data-project-bb05a7bc36c4.json
+9. In variables.tf, put your project-id and the regions/locations (list here : https://cloud.google.com/about/locations?hl=fr#regional-products).
+10.Executes terraform init; terraform plan; terraform apply and your bucket and dataset are created ! 
