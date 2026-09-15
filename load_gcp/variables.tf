@@ -1,7 +1,7 @@
 variable "project" {
   description = "Project"
   # ENTER YOUR OWN PROJECT ID HERE
-  default     = "france-travail-data-project" 
+  default     = "project-addc57f7-fb9f-4221-a91" 
 }
 
 variable "bq_dataset_name" {
@@ -11,7 +11,7 @@ variable "bq_dataset_name" {
 
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name"
-  default     = "ft-data-files-bucket" # DON'T TOUCH
+  default     = "ft_data_files_bucket" # DON'T TOUCH
 }
 
 variable "gcs_storage_class" {
