@@ -46,11 +46,10 @@
 ---
 x-airflow-common:
   &airflow-common
-  # In order to add custom dependencies or upgrade provider distributions you can use your extended image.
-  # Comment the image line, place your Dockerfile in the directory where you placed the docker-compose.yaml
-  # and uncomment the "build" line below, Then run `docker-compose build` to build the images.
-  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:3.3.1}
-  # build: .
+  # Custom image built from the local Dockerfile (adds apache-airflow-providers-google).
+  # Run `docker compose build` after changing the Dockerfile.
+  build: .
+  image: ${AIRFLOW_IMAGE_NAME:-ftde-project-airflow:3.3.1}
   env_file:
     - ${ENV_FILE_PATH:-.env}
   environment:
@@ -71,11 +70,15 @@ x-airflow-common:
     # See https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/check-health.html#scheduler-health-check-server
     # yamllint enable rule:line-length
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
-    # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
-    # for other purpose (development, test and especially production usage) build/extend Airflow image.
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
     # The following line can be used to set a custom config file, stored in the local config folder
     AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
+    GOOGLE_APPLICATION_CREDENTIALS: ${GOOGLE_APPLICATION_CREDENTIALS:-/opt/airflow/config/gcp-service-account.json}
+    # Defines the "google_cloud_default" connection used by the Google provider operators.
+    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?key_path=/opt/airflow/config/gcp-service-account.json'
+    # AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: >-
+    #   {"conn_type": "google_cloud_platform", "extra": {"key_path": "/opt/airflow/config/gcp-service-account.json", "project": "project-addc57f7-fb9f-4221-a91", "scope": "https://www.googleapis.com/auth/cloud-platform"}}
+  
+    
   volumes:
     - /home/arnaudg0649/Desktop/FTDE_project/dags:/opt/airflow/dags
     - /home/arnaudg0649/Desktop/FTDE_project/logs:/opt/airflow/logs

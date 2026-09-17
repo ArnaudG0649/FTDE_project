@@ -1,7 +1,13 @@
 playground.py
 playground
 prompt.txt
+config/*.json
+config/private
+
 dags/extract/data
+dags/mytuto_dag.py
+dags/extracttuto
+
 
 load_gcp/.terraform.lock.hcl
 load_gcp/terraform.tfstate
