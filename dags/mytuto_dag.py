@@ -1,10 +1,9 @@
 from pprint import pprint
 import textwrap
 from datetime import datetime, timedelta
-from extract.test2 import callable_create_and_save_dataframe
-from extract.test import print_current_datetime
 
-PATH_TO_PYTHON_BINARY = "dags/venv/bin/python3"
+from extracttuto.test2 import callable_create_and_save_dataframe
+from extracttuto.test import print_current_datetime
 
 # Operators; we need this to operate!
 from airflow.providers.standard.operators.bash import BashOperator

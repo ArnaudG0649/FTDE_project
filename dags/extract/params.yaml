@@ -1,7 +1,6 @@
 make_csv: True
-data_dir: "extract/data"
-territories_dir: "extract/territories"
-
+data_dir: "dags/extract/data"
+territories_dir: "dags/extract/territories"
 
 test_mode: True
 n: 300

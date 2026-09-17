@@ -1,6 +1,7 @@
 playground.py
+playground
 prompt.txt
-extract/data
+dags/extract/data
 
 load_gcp/.terraform.lock.hcl
 load_gcp/terraform.tfstate
