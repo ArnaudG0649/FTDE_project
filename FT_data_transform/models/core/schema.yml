@@ -1,0 +1,32 @@
+version: 2
+
+models:   
+  - name: dim_departments
+    description: >
+      List of French departments with the name and id of the region they belong to.
+    columns:
+      - name: department_id
+        description: Department code (e.g. "75", "2A")
+        data_tests:
+          - unique
+          - not_null
+      - name: department_name
+        description: Department name
+      - name: region_id
+        description: Id of the region the department belongs to
+      - name: region_name
+        description: Name of the region the department belongs to
+
+  - name: dm_departments_per_region
+    description: >
+      Number of departments per region.
+    columns:
+      - name: region_id
+        description: Region code
+        data_tests:
+          - unique
+          - not_null
+      - name: region_name
+        description: Region name
+      - name: department_count
+        description: Number of departments belonging to the region

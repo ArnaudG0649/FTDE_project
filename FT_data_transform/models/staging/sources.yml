@@ -1,0 +1,36 @@
+sources:
+  - name: raw
+    description: Raw France travail data from NYC TLC
+    database: |
+      {%- if target.type == 'bigquery' -%}
+        project-addc57f7-fb9f-4221-a91
+      {%- else -%}
+        taxi_rides_ny
+      {%- endif -%}
+    schema: |
+      {%- if target.type == 'bigquery' -%}
+        FT_data
+      {%- else -%}
+        prod
+      {%- endif -%}
+    tables:
+      - name: departments
+        description: Raw French departments referential
+        columns:
+          - name: department_id
+            description: Department code (e.g. "75", "2A")
+          - name: department_name
+            description: Department name
+          - name: region_id
+            description: Id of the region the department belongs to
+      - name: regions
+        description: Raw French regions referential
+        columns:
+          - name: region_id
+            description: Region code
+          - name: region_name
+            description: Region name
+    config:
+      freshness:
+        warn_after: {count: 24, period: hour}
+        error_after: {count: 48, period: hour}

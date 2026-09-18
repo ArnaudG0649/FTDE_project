@@ -9,6 +9,11 @@ variable "bq_dataset_name" {
   default     = "FT_data" # DON'T TOUCH
 }
 
+variable "bq_dataset_name_2" {
+  description = "My second BigQuery Dataset Name"
+  default     = "FT_data_analytics" # DON'T TOUCH
+}
+
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name"
   default     = "ft_data_files_bucket" # DON'T TOUCH
