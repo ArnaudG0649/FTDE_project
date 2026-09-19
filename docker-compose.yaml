@@ -84,6 +84,8 @@ x-airflow-common:
     - /home/arnaudg0649/Desktop/FTDE_project/logs:/opt/airflow/logs
     - /home/arnaudg0649/Desktop/FTDE_project/config:/opt/airflow/config
     - /home/arnaudg0649/Desktop/FTDE_project/plugins:/opt/airflow/plugins
+    - /home/arnaudg0649/Desktop/FTDE_project/FT_data_transform:/opt/airflow/FT_data_transform
+
   # - /home/arnaudg0649/Desktop/FTDE_project/.venv:/opt/airflow/.venv
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:

@@ -10,3 +10,17 @@ default:
       threads: 4
       timeout_seconds: 300
       location: europe-west8
+
+
+airflow:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: "project-addc57f7-fb9f-4221-a91"
+      dataset: "FT_data_analytics"
+      keyfile: "/opt/airflow/config/gcp-service-account.json"
+      threads: 4
+      timeout_seconds: 300
+      location: europe-west8

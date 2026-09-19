@@ -190,7 +190,7 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) ->
         else:
             print(f"[{rome_code}] Erreur job: status code {r_job.status_code}")
     except Exception as e:
-        print(f"[{rome_code}] Exception lors de l'appel job: {e}")
+        print(f"[{rome_code}] Exception during job call: {e}")
 
     # 2. API Marché du travail (Labour Market)
     try:
@@ -216,7 +216,7 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) ->
         else:
             print(f"[{rome_code}] Erreur labourMarket: status code {r_market.status_code}")
     except Exception as e:
-        print(f"[{rome_code}] Exception lors de l'appel labourMarket: {e}")
+        print(f"[{rome_code}] Exception during labourMarket call: {e}")
 
     return row
 
@@ -340,9 +340,9 @@ def fetch_job_department_attributes(rome_code: str, department_id: str, session:
 
                 
         else:
-            print(f"[{rome_code}] Erreur labourMarket: status code {r_market.status_code}")
+            print(f"[{rome_code}] Error labourMarket: status code {r_market.status_code}")
     except Exception as e:
-        print(f"[{rome_code}] Exception lors de l'appel labourMarket: {e}")
+        print(f"[{rome_code}] Exception during labourMarket call: {e}")
 
     return row
 
@@ -363,7 +363,7 @@ def download_jobs_departments(data_dir, url_base, make_csv, test_mode, n):
     parquet_path = osp.join(data_dir, "jobs_departments.parquet")
     
     total = len(df_cross_test) if test_mode else len(df_cross)
-    print(f"Nombre de couples métier-departement à traiter : {total}")
+    print(f"Number of job-department pairs to process: {total}")
 
     results = {}
     headers = {"User-Agent": "Mozilla/5.0"}
