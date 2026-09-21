@@ -4,7 +4,7 @@ def extract(config_file="dags/extract/params.yaml") :
     import os.path as osp
     from extract.extract_utils import (
         csv_to_parquet,
-        download_interests,
+        # download_interests,
         download_jobs_id_and_name,
         download_domains,
         download_jobs_subdomains_extended,
@@ -32,7 +32,7 @@ def extract(config_file="dags/extract/params.yaml") :
 
 
     csv_to_parquet(territories_dir, data_dir)
-    download_interests(interests_url, data_dir, make_csv)
+    # download_interests(interests_url, data_dir, make_csv)
     download_jobs_id_and_name(jobs_alphabetical_url, data_dir, make_csv)
     download_domains(domains_url, data_dir, make_csv)
     download_jobs_subdomains_extended(domain_url, data_dir, make_csv)

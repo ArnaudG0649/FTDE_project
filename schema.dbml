@@ -1,0 +1,56 @@
+// DBML diagram for the "extract" layer tables
+// Paste this file's content at https://dbdiagram.io
+
+Table regions {
+  region_id integer [pk]
+  region_name varchar
+}
+
+Table departments {
+  department_id varchar [pk]
+  department_name varchar
+  region_id varchar [ref: > regions.region_id]
+}
+
+Table domains {
+  domain_id integer [pk]
+  DomainName varchar
+  DomainNameUrl varchar
+}
+
+Table subdomains {
+  subdomain_id integer [pk]
+  subDomain varchar
+  domain_id integer [ref: > domains.domain_id]
+}
+
+Table jobs {
+  romeCode varchar [pk]
+  job_name varchar
+  transitionNumerique boolean
+  transitionDemographique boolean
+  transitionEcologique boolean
+  emploiCadre boolean
+  emploiReglemente boolean
+  salaryq10 integer
+  salaryq90 integer
+  recruitementDifficultyScore integer
+  recruitementDifficultyScoreYear integer
+}
+
+Table jobs_subdomains {
+  romeCode varchar [ref: > jobs.romeCode]
+  subdomain_id integer [ref: > subdomains.subdomain_id]
+}
+
+Table jobs_departments {
+  romeCode varchar [ref: > jobs.romeCode]
+  department_id varchar [ref: > departments.department_id]
+  jobSeekers integer
+  jobOffers integer
+  jobPeriod varchar
+  salaryq10 integer
+  salaryq90 integer
+  recruitementDifficultyScore integer
+  recruitementDifficultyScoreYear integer
+}

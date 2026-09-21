@@ -112,6 +112,121 @@ models:
         data_tests:
           - not_null            
 
+  - name: stg_domains
+    description: >
+      Staging model for the job domains referential.
+    columns:
+      - name: domain_id
+        description: Domain code
+        data_tests:
+          - unique
+          - not_null
+      - name: domain_name
+        description: Domain label
+      - name: domain_name_url
+        description: Domain label url
+
+  - name: stg_subdomains
+    description: >
+      Staging model for the job subdomains referential.
+    columns:
+      - name: subdomain_id
+        description: Subdomain surrogate id
+        data_tests:
+          - unique
+          - not_null
+      - name: subdomain_name
+        description: Subdomain label
+      - name: domain_id
+        description: Id of the domain the subdomain belongs to
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_domains')
+                field: domain_id
+              config:
+                severity: warn
+
+  - name: stg_jobs
+    description: >
+      Staging model for the jobs referential enriched with national attributes.
+    columns:
+      - name: rome_code
+        description: ROME code of the job
+        data_tests:
+          - unique
+          - not_null
+      - name: job_name
+        description: Job label
+      - name: salaryq10
+        description: National 10th percentile salary
+      - name: salaryq90
+        description: National 90th percentile salary
+      - name: recruitement_difficulty_score
+        description: National recruitment difficulty score
+      - name: recruitement_difficulty_score_year
+        description: Year the recruitment difficulty score refers to
+
+  - name: stg_jobs_subdomains
+    description: >
+      Staging model for the bridge table between jobs and subdomains.
+    columns:
+      - name: rome_code
+        description: ROME code of the job
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_jobs')
+                field: rome_code
+              config:
+                severity: warn
+      - name: subdomain_id
+        description: Id of the subdomain the job belongs to
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_subdomains')
+                field: subdomain_id
+              config:
+                severity: warn
+
+  - name: stg_jobs_departments
+    description: >
+      Staging model for jobs attributes at department level.
+    columns:
+      - name: rome_code
+        description: ROME code of the job
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_jobs')
+                field: rome_code
+              config:
+                severity: warn
+      - name: department_id
+        description: Department code
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_departments')
+                field: department_id
+              config:
+                severity: warn
+      - name: job_seekers
+        description: Number of job seekers in the department
+      - name: job_offers
+        description: Number of job offers in the department
+      - name: job_period
+        description: Period the job offers count refers to
+      - name: salaryq10
+        description: 10th percentile salary in the department
+      - name: salaryq90
+        description: 90th percentile salary in the department
+      - name: recruitement_difficulty_score
+        description: Recruitment difficulty score in the department
+      - name: recruitement_difficulty_score_year
+        description: Year the recruitment difficulty score refers to
+
   - name: stg_yellow_tripdata
     description: >
       Staging model for yellow taxi trip data. This model standardizes column names

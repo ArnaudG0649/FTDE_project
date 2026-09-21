@@ -30,6 +30,55 @@ sources:
             description: Region code
           - name: region_name
             description: Region name
+      - name: domains
+        description: Raw job domains referential
+        columns:
+          - name: domain_id
+            description: Domain code
+          - name: DomainName
+            description: Domain label
+          - name: DomainNameUrl
+            description: Domain label url
+      - name: subdomains
+        description: Raw job subdomains referential
+        columns:
+          - name: subdomain_id
+            description: Subdomain surrogate id
+          - name: subDomain
+            description: Subdomain label
+          - name: domain_id
+            description: Id of the domain the subdomain belongs to
+      - name: jobs
+        description: Raw jobs referential enriched with national attributes
+        columns:
+          - name: romeCode
+            description: ROME code of the job
+          - name: job_name
+            description: Job label
+          - name: salaryq10
+            description: National 10th percentile salary
+          - name: salaryq90
+            description: National 90th percentile salary
+          - name: recruitementDifficultyScore
+            description: National recruitment difficulty score
+      - name: jobs_subdomains
+        description: Raw bridge table between jobs and subdomains
+        columns:
+          - name: romeCode
+            description: ROME code of the job
+          - name: subdomain_id
+            description: Id of the subdomain the job belongs to
+      - name: jobs_departments
+        description: Raw jobs attributes at department level
+        columns:
+          - name: romeCode
+            description: ROME code of the job
+          - name: department_id
+            description: Department code
+          - name: jobSeekers
+            description: Number of job seekers in the department
+          - name: jobOffers
+            description: Number of job offers in the department
     config:
       freshness:
         warn_after: {count: 24, period: hour}

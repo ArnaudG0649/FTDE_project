@@ -28,7 +28,7 @@ GCP_CONN_ID = "google_cloud_default"
 @task
 def get_parquet_blob_names() -> list[str]:
     """List the parquet files produced by the extract task (their names become the GCS blob/BQ table names)."""
-    return sorted(osp.basename(f) for f in glob(osp.join(DATA_DIR, "*.parquet")))
+    return sorted(osp.basename(f) for f in glob(osp.join(DATA_DIR, "*.parquet")) if osp.basename(f) != "jobs_subdomains_extended.parquet")
 
 
 @task

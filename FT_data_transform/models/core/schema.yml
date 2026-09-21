@@ -30,3 +30,142 @@ models:
         description: Region name
       - name: department_count
         description: Number of departments belonging to the region
+
+  - name: dim_regions
+    description: >
+      List of French regions.
+    columns:
+      - name: region_id
+        description: Region code
+        data_tests:
+          - unique
+          - not_null
+      - name: region_name
+        description: Region name
+
+  - name: dim_domains
+    description: >
+      List of job domains.
+    columns:
+      - name: domain_id
+        description: Domain code
+        data_tests:
+          - unique
+          - not_null
+      - name: domain_name
+        description: Domain label
+      - name: domain_name_url
+        description: Domain label url
+
+  - name: fct_job_departments
+    description: >
+      Job market indicators (job seekers, job offers, salaries, recruitment
+      difficulty) at job x department grain, for dashboard consumption.
+    columns:
+      - name: department_id
+        description: Department code
+        data_tests:
+          - not_null
+      - name: department_name
+        description: Department name
+      - name: job_name
+        description: Job label
+      - name: job_seekers
+        description: Number of job seekers in the department
+      - name: job_offers
+        description: Number of job offers in the department
+      - name: job_rate
+        description: job_seekers / job_offers ratio
+      - name: job_period
+        description: Period the job offers count refers to
+      - name: salaryq10
+        description: 10th percentile salary in the department
+      - name: salaryq90
+        description: 90th percentile salary in the department
+      - name: recruitement_difficulty_score
+        description: Recruitment difficulty score in the department
+      - name: recruitement_difficulty_score_year
+        description: Year the recruitment difficulty score refers to
+
+  - name: dim_job_national
+    description: >
+      Job market indicators aggregated at national grain. job_offers and
+      job_seekers are summed from department-level data, salaries and
+      recruitment difficulty score come from the national attributes.
+    columns:
+      - name: rome_code
+        description: ROME code of the job
+        data_tests:
+          - unique
+          - not_null
+      - name: job_name
+        description: Job label
+      - name: job_offers
+        description: Sum of job offers across departments
+      - name: job_seekers
+        description: Sum of job seekers across departments
+      - name: job_rate
+        description: job_seekers / job_offers ratio, computed at national level
+      - name: salaryq10
+        description: National 10th percentile salary
+      - name: salaryq90
+        description: National 90th percentile salary
+      - name: recruitement_difficulty_score
+        description: National recruitment difficulty score
+
+  - name: dim_job_regional
+    description: >
+      Job market indicators aggregated at job x region grain. job_offers and
+      job_seekers are summed from department-level data, recruitment difficulty
+      score is averaged.
+    columns:
+      - name: rome_code
+        description: ROME code of the job
+      - name: job_name
+        description: Job label
+      - name: region_id
+        description: Region code
+      - name: region_name
+        description: Region name
+      - name: job_offers
+        description: Sum of job offers across the region's departments
+      - name: job_seekers
+        description: Sum of job seekers across the region's departments
+      - name: job_rate
+        description: job_seekers / job_offers ratio, computed at regional level
+      - name: recruitement_difficulty_score_avg
+        description: Average recruitment difficulty score across the region's departments
+
+  - name: bridge_jobs_subdomains
+    description: >
+      Bridge table between jobs and subdomains.
+    columns:
+      - name: rome_code
+        description: ROME code of the job
+      - name: job_name
+        description: Job label
+      - name: subdomain_id
+        description: Id of the subdomain the job belongs to
+      - name: subdomain_name
+        description: Subdomain label
+      - name: domain_id
+        description: Id of the domain the subdomain belongs to
+
+  - name: dm_subdomains
+    description: >
+      Job market indicators aggregated at subdomain grain, based on national
+      job-level data (dim_job_national).
+    columns:
+      - name: subdomain_id
+        description: Subdomain surrogate id
+        data_tests:
+          - unique
+          - not_null
+      - name: subdomain_name
+        description: Subdomain label
+      - name: job_offers
+        description: Sum of national job offers for jobs in the subdomain
+      - name: job_seekers
+        description: Sum of national job seekers for jobs in the subdomain
+      - name: recruitement_difficulty_score_avg
+        description: Average national recruitment difficulty score for jobs in the subdomain

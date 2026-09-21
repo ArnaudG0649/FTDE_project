@@ -21,28 +21,28 @@ def csv_to_parquet(territories_dir,data_dir) -> None:
 
 
 
-def download_interests(url, data_dir, make_csv) -> None:
-    response = requests.get(url)
+# def download_interests(url, data_dir, make_csv) -> None:
+#     response = requests.get(url)
 
-    print(f"Downloading interests from {url}")
-    if response.status_code == 200:
-        df = pd.DataFrame(response.json()).astype(
-            {"code": int, "label": str, "labelUrl": str}
-        )
-        df.rename(
-            columns={
-                "code": "interest_id",
-                "label": "interestLabel",
-                "labelUrl": "interestLabelUrl",
-            },
-            inplace=True,
-        )
-        if make_csv:
-            df.to_csv(osp.join(data_dir, "interests.csv"), index=False)
-        df.to_parquet(osp.join(data_dir, "interests.parquet"), index=False)
+#     print(f"Downloading interests from {url}")
+#     if response.status_code == 200:
+#         df = pd.DataFrame(response.json()).astype(
+#             {"code": int, "label": str, "labelUrl": str}
+#         )
+#         df.rename(
+#             columns={
+#                 "code": "interest_id",
+#                 "label": "interestLabel",
+#                 "labelUrl": "interestLabelUrl",
+#             },
+#             inplace=True,
+#         )
+#         if make_csv:
+#             df.to_csv(osp.join(data_dir, "interests.csv"), index=False)
+#         df.to_parquet(osp.join(data_dir, "interests.parquet"), index=False)
 
-    else:
-        print(f"Failed to retrieve the page. Status code: {response.status_code}")
+#     else:
+#         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
 
 def download_jobs_id_and_name(url, data_dir, make_csv) -> None:
