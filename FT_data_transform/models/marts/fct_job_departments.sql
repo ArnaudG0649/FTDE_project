@@ -4,7 +4,7 @@ select
     j.job_name,
     jd.job_seekers,
     jd.job_offers,
-    safe_divide(jd.job_seekers, jd.job_offers) as job_rate,
+    safe_divide(jd.job_offers, jd.job_seekers) as offers_per_seeker,
     jd.job_period,
     jd.salaryq10,
     jd.salaryq90,

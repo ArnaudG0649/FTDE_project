@@ -38,6 +38,6 @@ models:
   ft_data_transform:
     staging:
       +materialized: view
-    core:
+    marts:
       +materialized: table
 

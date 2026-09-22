@@ -12,7 +12,7 @@ select
     j.job_name,
     dept_agg.job_offers,
     dept_agg.job_seekers,
-    safe_divide(dept_agg.job_seekers, dept_agg.job_offers) as job_rate,
+    safe_divide(dept_agg.job_offers, dept_agg.job_seekers) as offers_per_seeker,
     j.salaryq10,
     j.salaryq90,
     j.recruitement_difficulty_score

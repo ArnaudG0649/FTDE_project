@@ -17,20 +17,6 @@ models:
       - name: region_name
         description: Name of the region the department belongs to
 
-  - name: dm_departments_per_region
-    description: >
-      Number of departments per region.
-    columns:
-      - name: region_id
-        description: Region code
-        data_tests:
-          - unique
-          - not_null
-      - name: region_name
-        description: Region name
-      - name: department_count
-        description: Number of departments belonging to the region
-
   - name: dim_regions
     description: >
       List of French regions.
@@ -74,7 +60,7 @@ models:
         description: Number of job seekers in the department
       - name: job_offers
         description: Number of job offers in the department
-      - name: job_rate
+      - name: offers_per_seeker
         description: job_seekers / job_offers ratio
       - name: job_period
         description: Period the job offers count refers to
@@ -104,7 +90,7 @@ models:
         description: Sum of job offers across departments
       - name: job_seekers
         description: Sum of job seekers across departments
-      - name: job_rate
+      - name: offers_per_seeker
         description: job_seekers / job_offers ratio, computed at national level
       - name: salaryq10
         description: National 10th percentile salary
@@ -131,7 +117,7 @@ models:
         description: Sum of job offers across the region's departments
       - name: job_seekers
         description: Sum of job seekers across the region's departments
-      - name: job_rate
+      - name: offers_per_seeker
         description: job_seekers / job_offers ratio, computed at regional level
       - name: recruitement_difficulty_score_avg
         description: Average recruitment difficulty score across the region's departments
@@ -150,8 +136,10 @@ models:
         description: Subdomain label
       - name: domain_id
         description: Id of the domain the subdomain belongs to
+      - name: domain_name
+        description: Domain label
 
-  - name: dm_subdomains
+  - name: dim_subdomains
     description: >
       Job market indicators aggregated at subdomain grain, based on national
       job-level data (dim_job_national).
@@ -167,5 +155,7 @@ models:
         description: Sum of national job offers for jobs in the subdomain
       - name: job_seekers
         description: Sum of national job seekers for jobs in the subdomain
+      - name: offers_per_seeker
+        description: job_seekers / job_offers ratio, computed at subdomain level
       - name: recruitement_difficulty_score_avg
         description: Average national recruitment difficulty score for jobs in the subdomain

@@ -18,7 +18,7 @@ select
     r.region_name,
     dept_agg.job_offers,
     dept_agg.job_seekers,
-    safe_divide(dept_agg.job_seekers, dept_agg.job_offers) as job_rate,
+    safe_divide(dept_agg.job_offers, dept_agg.job_seekers) as offers_per_seeker,
     dept_agg.recruitement_difficulty_score_avg
 from dept_agg
 left join {{ ref('stg_jobs') }} j

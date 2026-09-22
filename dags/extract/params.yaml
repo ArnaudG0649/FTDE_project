@@ -11,6 +11,6 @@ domains_url: "https://candidat.francetravail.fr/gw-metierscope/domains"
 domain_url: "https://candidat.francetravail.fr/gw-metierscope/domain"
 url_job: "https://candidat.francetravail.fr/gw-metierscope/job/"
 
-gcp_project_id: "project-addc57f7-fb9f-4221-a91"
+gcp_project_id: "project-addc57f7-fb9f-4221-a91"  # ENTER YOUR OWN PROJECT ID HERE
 gcs_bucket_name: "ft_data_files_bucket"
 bq_dataset_name: "FT_data"
