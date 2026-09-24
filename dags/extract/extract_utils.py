@@ -6,8 +6,9 @@ import os.path as osp
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
-
 def csv_to_parquet(territories_dir,data_dir) -> None:
+    """Convert CSV files of territories (departments and regions) to Parquet format."""
+    
     departments_file_csv = osp.join(territories_dir,"departments.csv")
     regions_file_csv = osp.join(territories_dir,"regions.csv")
     departments_file_parquet = osp.join(data_dir,"departments.parquet")
@@ -20,32 +21,8 @@ def csv_to_parquet(territories_dir,data_dir) -> None:
         .to_parquet(regions_file_parquet)
 
 
-
-# def download_interests(url, data_dir, make_csv) -> None:
-#     response = requests.get(url)
-
-#     print(f"Downloading interests from {url}")
-#     if response.status_code == 200:
-#         df = pd.DataFrame(response.json()).astype(
-#             {"code": int, "label": str, "labelUrl": str}
-#         )
-#         df.rename(
-#             columns={
-#                 "code": "interest_id",
-#                 "label": "interestLabel",
-#                 "labelUrl": "interestLabelUrl",
-#             },
-#             inplace=True,
-#         )
-#         if make_csv:
-#             df.to_csv(osp.join(data_dir, "interests.csv"), index=False)
-#         df.to_parquet(osp.join(data_dir, "interests.parquet"), index=False)
-
-#     else:
-#         print(f"Failed to retrieve the page. Status code: {response.status_code}")
-
-
 def download_jobs_id_and_name(url, data_dir, make_csv) -> None:
+    """Download jobs ID and name from the given URL (usually jobs_alphabetical_url) and save them as CSV and Parquet files."""
     response = requests.get(url)
 
     print(f"Downloading jobs from {url}")
@@ -53,7 +30,7 @@ def download_jobs_id_and_name(url, data_dir, make_csv) -> None:
         Dict = response.json()
         df = pd.DataFrame(sum(Dict.values(), [])).astype(
             {"romeCode": str, "mainName": str}
-        )
+        ) #sum because the JSON response is a dictionary of lists, and we want to combine all lists into a single list for the DataFrame.
         df.rename(columns={"mainName": "job_name"}, inplace=True)
         if make_csv:
             df.to_csv(osp.join(data_dir, "jobs.csv"), index=False)
@@ -63,12 +40,12 @@ def download_jobs_id_and_name(url, data_dir, make_csv) -> None:
 
 
 def download_domains(url, data_dir, make_csv) -> None:
+    """Download domains from the given URL (usually domains_url link in params.yaml) and save them as CSV and Parquet files."""
 
     print(f"Downloading domains from {url}")
     response = requests.get(url)
 
     if response.status_code == 200:
-        # df = pd.DataFrame(response.json()).drop(columns=["labelUrl"]).astype({"code": int, "label": str}).sort_values("code")
         df = (
             pd.DataFrame(response.json())
             .astype({"code": int, "label": str, "labelUrl": str})
@@ -93,29 +70,34 @@ def download_domains(url, data_dir, make_csv) -> None:
 def fetch_jobs_subdomains(
     domain_id, label, url_base
 ):
+    """For the given domain ID and label, fetch the associated jobs and subdomains from the specified URL base (usually domain_url in params.yaml)."""
     response = requests.get(f"{url_base}/{domain_id:03d}")
 
     if response.status_code == 200:
-        # print(f"Successfully retrieved the page for code {domain_id:03d}")
         Dict = response.json()["jobs"]
         df = pd.DataFrame(Dict)
-        df["domain_id"] = domain_id
+        df["domain_id"] = domain_id # add the domain_id to each row in the DataFrame
         try:
-            df["subDomain"] = df["subDomain"].map(lambda x: x["label"])
+            df["subDomain"] = df["subDomain"].map(lambda x: x["label"]) #The subDomain column dtype is dictionnary, so we apply the collection of the label in the whole column.
         except:
-            df["subDomain"] = label
+            df["subDomain"] = label #With no subdomain, we use the domain label as the subdomain.
         return df
     else:
         print(f"Failed to retrieve the page. Status code: {response.status_code}")
 
         
 def download_jobs_subdomains_extended(url, data_dir, make_csv) -> None:
+    """Download extended jobs subdomains relations data from the given URL (usually {domain_url}/{domain_id} links type with domain_url in params.yaml) and save them as CSV and Parquet files.
+    Extended means that it includes additional information beyond the basic jobs and subdomains relations.
+    Though the table made is not normalized and won't be uploaded to the data warehouse,
+    it is needed for collecting the subdomains and their relations. 
+    """
     print(f"Downloading jobs subdomains relations extended data from {url}/*")
     
     df_domains = pd.read_parquet(osp.join(data_dir, "domains.parquet"))
     n = len(df_domains)
 
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor: #fetch jobs subdomains couples for all domainsId
         list_df=list(executor.map(fetch_jobs_subdomains, df_domains.domain_id, df_domains.DomainName, [url for _ in range(n)]))
     
     df_extended = pd.concat(list_df, ignore_index=True)
@@ -124,15 +106,17 @@ def download_jobs_subdomains_extended(url, data_dir, make_csv) -> None:
     df_extended.to_parquet(osp.join(data_dir, "jobs_subdomains_extended.parquet"), index=False)
     
 def collect_subdomains(data_dir, make_csv):
-    
+    """Collect subdomains from the extended jobs subdomains relations data and save them as CSV and Parquet files."""
     df_extended_path=osp.join(data_dir, "jobs_subdomains_extended.parquet")
     df = pd.read_parquet(df_extended_path)[["subDomain", "domain_id"]]
     
     print(f"Collecting subdomains from {df_extended_path}")
 
+    # Make a dataframe of unique subdomains with their corresponding domain_id
     my_unique_value = lambda x:list(x)[0]
     df_subdomains = df.groupby("subDomain").agg(my_unique_value).reset_index().sort_values("domain_id")
-    df_subdomains["subdomain_id"] = range(1, len(df_subdomains) + 1)
+    
+    df_subdomains["subdomain_id"] = range(1, len(df_subdomains) + 1) # Assign a unique ID to each subdomain
     df_subdomains = df_subdomains[["subdomain_id", "subDomain", "domain_id"]].astype({"subdomain_id": "int", "subDomain": "string", "domain_id": "int"})
 
     if make_csv:
@@ -141,6 +125,7 @@ def collect_subdomains(data_dir, make_csv):
 
 
 def collect_jobs_subdomains(data_dir, make_csv):
+    """Collect jobs subdomains relations from the extended jobs subdomains relations data and the subdomains data, and save them as CSV and Parquet files."""
     df_extended_path=osp.join(data_dir, "jobs_subdomains_extended.parquet")
     df_subdomains_path=osp.join(data_dir, "subdomains.parquet")
     
@@ -157,9 +142,9 @@ def collect_jobs_subdomains(data_dir, make_csv):
     
 def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) -> dict:
     """
-    Récupère les attributs d'un métier à partir des deux API de France Travail (Métierscope) :
-    1. {url_base}/job/{romeCode} pour les indicateurs de transitions et statuts d'emploi
-    2. {url_base}/job/{romeCode}/labourMarket?territory=FR pour les salaires et scores de difficulté de recrutement
+    For one job retrieves job attributes from the two France Travail (Metierscope) APIs:
+    1. {url_base}/job/{romeCode} for transition indicators and employment statuses
+    2. {url_base}/job/{romeCode}/labourMarket?territory=FR for salaries and recruitment difficulty scores
     """
     url_job = f"{url_base}/{rome_code}"
     url_market = f"{url_base}/{rome_code}/labourMarket?territory=FR"
@@ -180,7 +165,7 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) ->
         "sourcePeriod": None,
     }
 
-    # 1. API Métier général
+    # 1. General job API
     try:
         r_job = session.get(url_job, timeout=15)
         if r_job.status_code == 200:
@@ -195,13 +180,13 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) ->
     except Exception as e:
         print(f"[{rome_code}] Exception during job call: {e}")
 
-    # 2. API Marché du travail (Labour Market)
+    # 2. Labour market API
     try:
         r_market = session.get(url_market, timeout=15)
         if r_market.status_code == 200:
             market_data = r_market.json()
 
-            # Salaires
+            # Salaries
             salary_data = market_data.get("salary")
             if isinstance(salary_data, dict):
                 row["salaryq10"] = salary_data.get("minSalary")
@@ -216,13 +201,15 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) ->
             if isinstance(job_offers_data, dict):
                 row["jobOffersNational"] = job_offers_data.get("nombreIndicateur")
 
-            # Difficulté de recrutement
+            # Recruitment difficulty
             diff_data = market_data.get("recruitmentDifficultyScore")
             if isinstance(diff_data, dict):
                 row["recruitementDifficultyScore"] = diff_data.get("nombreIndicateur")
+                
+                # Extract the year from the recruitment difficulty score period label
                 libelle_periode = diff_data.get("libellePeriode")
                 if libelle_periode:
-                    match = re.search(r"\b(\d{4})\b", str(libelle_periode))
+                    match = re.search(r"\b(\d{4})\b", str(libelle_periode)) # Look for a 4-digit year in the period label
                     if match:
                         row["recruitementDifficultyScoreYear"] = int(match.group(1))
         else:
@@ -234,6 +221,15 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) ->
 
 
 def download_jobs_attributes(data_dir, url_base, make_csv, test_mode, n):
+    """Download job attributes from the France Travail (Metierscope) APIs for all jobs listed in the local jobs parquet file, and insert them into it.
+
+    Args:
+        data_dir (str): Directory where the jobs CSV and Parquet files are stored.
+        url_base (str): Base URL for the France Travail APIs. Often corresponds to url_job in params.yaml.
+        make_csv (bool): Whether to create a CSV file for the downloaded attributes.
+        test_mode (bool): If True, only a sample of n jobs will be processed.
+        n (int): Number of jobs to sample if test_mode is True.
+    """
     csv_path = osp.join(data_dir, "jobs.csv")
     parquet_path = osp.join(data_dir, "jobs.parquet")
 
@@ -249,11 +245,9 @@ def download_jobs_attributes(data_dir, url_base, make_csv, test_mode, n):
     print(f"Number of jobs to process: {total}")
 
     results = {}
-    headers = {"User-Agent": "Mozilla/5.0"}
 
-    # Utilisation d'un pool de threads pour paralléliser les requêtes
+    # Use a thread pool to parallelize requests
     with requests.Session() as session:
-        session.headers.update(headers)
         with ThreadPoolExecutor(max_workers=10) as executor:
             future_to_code = {
                 executor.submit(fetch_job_attributes, code, session, url_base): code
@@ -261,8 +255,8 @@ def download_jobs_attributes(data_dir, url_base, make_csv, test_mode, n):
             }
 
             completed = 0
-            for future in as_completed(future_to_code):
-                data = future.result()
+            for future in as_completed(future_to_code): # Iterate over completed futures as they finish
+                data = future.result() # = The row precessed by fetch_job_attributes
                 results[data["romeCode"]] = data
                 completed += 1
                 if completed % 50 == 0 or completed == total:
@@ -270,15 +264,15 @@ def download_jobs_attributes(data_dir, url_base, make_csv, test_mode, n):
 
     df_attributes = pd.DataFrame([results[code] for code in rome_codes])
 
-    # Fusion avec le DataFrame initial
-    # Si les colonnes existent déjà dans df_jobs, on les met à jour
+    # Merge with the initial DataFrame.
+    # Drop existing columns so they are updated with the retrieved values.
     cols_to_drop = [c for c in df_attributes.columns if c in df_jobs.columns and c != "romeCode"]
     if cols_to_drop:
         df_jobs = df_jobs.drop(columns=cols_to_drop)
 
-    df_final = df_jobs.merge(df_attributes, on="romeCode", how="left")
+    df_final = df_jobs.merge(df_attributes, on="romeCode", how="left") # Join the initial job DataFrame with the retrieved attributes
 
-    # Typage des colonnes
+    # Column type conversions
     df_final = df_final.astype({
         "transitionNumerique": "boolean",
         "transitionDemographique": "boolean",
@@ -294,7 +288,7 @@ def download_jobs_attributes(data_dir, url_base, make_csv, test_mode, n):
         "recruitementDifficultyScoreYear": "Int64"
     })
 
-    # Sauvegarde des données enrichies
+    # Save the enriched data
     if make_csv:
         df_final.to_csv(csv_path, index=False)
     df_final.to_parquet(parquet_path, index=False)
@@ -303,7 +297,7 @@ def download_jobs_attributes(data_dir, url_base, make_csv, test_mode, n):
     
 def fetch_job_department_attributes(rome_code: str, department_id: str, session: requests.Session, url_base) -> dict:
     """
-    Retrieves the attributes of a job in a department via the France Travail Labour Market API.
+    Retrieves the attributes of a job in a department via the France Travail Labour Market API. url_base is often url_job in params.yaml.
     """
 
     url_market = f"{url_base}{rome_code}/labourMarket?territory={department_id}"
@@ -320,34 +314,34 @@ def fetch_job_department_attributes(rome_code: str, department_id: str, session:
         "recruitementDifficultyScoreYear": None,
     }
 
-    # API Marché du travail (Labour Market)
+    # Labour market API
     try:
         r_market = session.get(url_market, timeout=15)
         if r_market.status_code == 200:
             market_data = r_market.json()
 
-            # Salaires
+            # Salaries
             salary_data = market_data.get("salary")
             if isinstance(salary_data, dict):
                 row["salaryq10"] = salary_data.get("minSalary")
                 row["salaryq90"] = salary_data.get("maxSalary")
 
-            # Difficulté de recrutement
+            # Recruitment difficulty
             diff_data = market_data.get("recruitmentDifficultyScore")
             if isinstance(diff_data, dict):
                 row["recruitementDifficultyScore"] = diff_data.get("nombreIndicateur")
                 libelle_periode = diff_data.get("libellePeriode")
                 if libelle_periode:
-                    match = re.search(r"\b(\d{4})\b", str(libelle_periode))
+                    match = re.search(r"\b(\d{4})\b", str(libelle_periode)) # Look for a 4-digit year in the period label
                     if match:
                         row["recruitementDifficultyScoreYear"] = int(match.group(1))
                      
-            # Demande d'emploi
+            # Job seekers
             job_seekers_data = market_data.get("jobSeekers")
             if isinstance(job_seekers_data, dict):
                 row["jobSeekers"] = job_seekers_data.get("nombreIndicateur")
         
-            # Offre d'emploi
+            # Job offers
             job_offers_data = market_data.get("jobOffers")
             if isinstance(job_offers_data, dict):
                 row["jobOffers"] = job_offers_data.get("nombreIndicateur")
@@ -362,11 +356,19 @@ def fetch_job_department_attributes(rome_code: str, department_id: str, session:
     return row
 
 
-def download_jobs_departments(data_dir, url_base, make_csv, n):
+def download_jobs_departments(data_dir, url_base, make_csv):
+    """
+    Downloads job department pair attributes from the France Travail Labour Market API.
+
+    Args:
+        data_dir (str): Directory where the data files are stored.
+        url_base (str): Base URL for the France Travail APIs. Often corresponds to url_job in params.yaml.
+        make_csv (bool): Whether to create a CSV file for the results.
+    """
 
     df_department = pd.read_parquet(osp.join(data_dir, "departments.parquet"))
     df_jobs = pd.read_parquet(osp.join(data_dir, "jobs.parquet"))
-    df_cross = df_jobs.merge(df_department, how='cross')[["romeCode", "department_id"]]
+    df_cross = df_jobs.merge(df_department, how='cross')[["romeCode", "department_id"]] # Create all possible job-department pairs (cartesian product)
 
     print(f"Retrieving job department attributes from {url_base}/*/labourMarket?territory=*")
     
@@ -378,11 +380,9 @@ def download_jobs_departments(data_dir, url_base, make_csv, n):
     print(f"Number of job-department pairs to process: {total}")
 
     results = {}
-    headers = {"User-Agent": "Mozilla/5.0"}
 
-    # Utilisation d'un pool de threads pour paralléliser les requêtes
+    # Use a thread pool to parallelize requests
     with requests.Session() as session:
-        session.headers.update(headers)
         with ThreadPoolExecutor(max_workers=10) as executor:
             future_to_code = {
                 executor.submit(fetch_job_department_attributes, code, department_id, session, url_base): code
@@ -400,7 +400,7 @@ def download_jobs_departments(data_dir, url_base, make_csv, n):
 
     df_final = pd.DataFrame(results.values())
 
-    # Typage des colonnes
+    # Column type conversions
     df_final = df_final.astype({
         "romeCode": "string",
         "department_id": "string",

@@ -2,8 +2,8 @@ make_csv: True
 data_dir: "dags/extract/data"
 territories_dir: "dags/extract/territories"
 
-test_mode: False
-n: 20
+test_mode: True
+n: 3
 
 interests_url: "https://candidat.francetravail.fr/gw-metierscope/interests"
 jobs_alphabetical_url: "https://candidat.francetravail.fr/gw-metierscope/jobs/groupByFirstLetter"

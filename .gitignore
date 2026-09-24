@@ -6,8 +6,8 @@ config/private
 
 dags/extract/data
 dags/mytuto_dag.py
+dags/extract_dag.py
 dags/extracttuto
-
 
 iac/.terraform.lock.hcl
 iac/terraform.tfstate
