@@ -52,18 +52,22 @@ models:
         description: Department code
         data_tests:
           - not_null
+      - name: rome_code
+        description: ROME code of the job
+        data_tests:
+          - not_null
       - name: department_name
         description: Department name
       - name: job_name
         description: Job label
       - name: job_seekers
-        description: Number of job seekers in the department
+        description: Number of job seekers in the department over the 12 months preceding source_period
       - name: job_offers
-        description: Number of job offers in the department
+        description: Number of job offers in the department over the 12 months preceding source_period
       - name: offers_per_seeker
         description: job_seekers / job_offers ratio
-      - name: job_period
-        description: Period the job offers count refers to
+      - name: source_period
+        description: Reference period to which the data relates, as defined by France Travail
       - name: salaryq10
         description: 10th percentile salary in the department
       - name: salaryq90
@@ -90,8 +94,12 @@ models:
         description: Sum of job offers across departments
       - name: job_seekers
         description: Sum of job seekers across departments
+      - name: job_seekers_national
+        description: Number of job seekers reported for the national territory
+      - name: job_offers_national
+        description: Number of job offers reported for the national territory
       - name: offers_per_seeker
-        description: job_seekers / job_offers ratio, computed at national level
+        description: job_offers / job_seekers ratio, computed at national level
       - name: salaryq10
         description: National 10th percentile salary
       - name: salaryq90
@@ -118,7 +126,7 @@ models:
       - name: job_seekers
         description: Sum of job seekers across the region's departments
       - name: offers_per_seeker
-        description: job_seekers / job_offers ratio, computed at regional level
+        description: job_offers / job_seekers ratio, computed at regional level
       - name: recruitement_difficulty_score_avg
         description: Average recruitment difficulty score across the region's departments
 
@@ -156,6 +164,6 @@ models:
       - name: job_seekers
         description: Sum of national job seekers for jobs in the subdomain
       - name: offers_per_seeker
-        description: job_seekers / job_offers ratio, computed at subdomain level
+        description: job_offers / job_seekers ratio, computed at subdomain level
       - name: recruitement_difficulty_score_avg
         description: Average national recruitment difficulty score for jobs in the subdomain

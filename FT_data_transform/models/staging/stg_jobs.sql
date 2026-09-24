@@ -18,6 +18,9 @@ renamed as (
         cast(emploiReglemente as bool) as emploi_reglemente,
         cast(salaryq10 as int64) as salaryq10,
         cast(salaryq90 as int64) as salaryq90,
+        cast(jobSeekersNational as int64) as job_seekers_national,
+        cast(jobOffersNational as int64) as job_offers_national,
+        cast(sourcePeriod as string) as source_period,
         cast(recruitementDifficultyScore as int64) as recruitement_difficulty_score,
         cast(recruitementDifficultyScoreYear as int64) as recruitement_difficulty_score_year
     from source

@@ -39,4 +39,4 @@ def extract(config_file="dags/extract/params.yaml") :
     collect_subdomains(data_dir, make_csv)
     collect_jobs_subdomains(data_dir, make_csv)
     download_jobs_attributes(data_dir, url_job, make_csv, test_mode, n)
-    download_jobs_departments(data_dir, url_job, make_csv, test_mode, n)
+    download_jobs_departments(data_dir, url_job, make_csv, n)

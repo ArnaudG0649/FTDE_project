@@ -48,7 +48,7 @@ Table jobs_departments {
   department_id varchar [ref: > departments.department_id]
   jobSeekers integer
   jobOffers integer
-  jobPeriod varchar
+  sourcePeriod varchar
   salaryq10 integer
   salaryq90 integer
   recruitementDifficultyScore integer

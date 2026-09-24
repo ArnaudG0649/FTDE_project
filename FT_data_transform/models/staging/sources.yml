@@ -76,9 +76,11 @@ sources:
           - name: department_id
             description: Department code
           - name: jobSeekers
-            description: Number of job seekers in the department
+            description: Number of job seekers in the department over the 12 months preceding sourcePeriod
           - name: jobOffers
-            description: Number of job offers in the department
+            description: Number of job offers in the department over the 12 months preceding sourcePeriod
+          - name: sourcePeriod
+            description: Reference period to which the data relates, as defined by France Travail
     config:
       freshness:
         warn_after: {count: 24, period: hour}

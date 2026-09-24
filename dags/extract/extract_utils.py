@@ -173,8 +173,11 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) ->
         "emploiReglemente": None,
         "salaryq10": None,
         "salaryq90": None,
+        "jobSeekersNational": None,
+        "jobOffersNational": None,
         "recruitementDifficultyScore": None,
         "recruitementDifficultyScoreYear": None,
+        "sourcePeriod": None,
     }
 
     # 1. API Métier général
@@ -203,6 +206,15 @@ def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) ->
             if isinstance(salary_data, dict):
                 row["salaryq10"] = salary_data.get("minSalary")
                 row["salaryq90"] = salary_data.get("maxSalary")
+                row["sourcePeriod"] = salary_data.get("libellePeriode")
+
+            job_seekers_data = market_data.get("jobSeekers")
+            if isinstance(job_seekers_data, dict):
+                row["jobSeekersNational"] = job_seekers_data.get("nombreIndicateur")
+
+            job_offers_data = market_data.get("jobOffers")
+            if isinstance(job_offers_data, dict):
+                row["jobOffersNational"] = job_offers_data.get("nombreIndicateur")
 
             # Difficulté de recrutement
             diff_data = market_data.get("recruitmentDifficultyScore")
@@ -275,6 +287,9 @@ def download_jobs_attributes(data_dir, url_base, make_csv, test_mode, n):
         "emploiReglemente": "boolean",
         "salaryq10": "Int64",
         "salaryq90": "Int64",
+        "jobSeekersNational": "Int64",
+        "jobOffersNational": "Int64",
+        "sourcePeriod": "string",
         "recruitementDifficultyScore": "Int64",
         "recruitementDifficultyScoreYear": "Int64"
     })
@@ -298,7 +313,7 @@ def fetch_job_department_attributes(rome_code: str, department_id: str, session:
         "department_id": str(department_id),
         "jobSeekers": None,
         "jobOffers": None,
-        "jobPeriod": None,
+        "sourcePeriod": None,
         "salaryq10": None,
         "salaryq90": None,
         "recruitementDifficultyScore": None,
@@ -336,7 +351,7 @@ def fetch_job_department_attributes(rome_code: str, department_id: str, session:
             job_offers_data = market_data.get("jobOffers")
             if isinstance(job_offers_data, dict):
                 row["jobOffers"] = job_offers_data.get("nombreIndicateur")
-                row["jobPeriod"] = job_offers_data.get("libellePeriode")
+                row["sourcePeriod"] = job_offers_data.get("libellePeriode")
 
                 
         else:
@@ -347,22 +362,19 @@ def fetch_job_department_attributes(rome_code: str, department_id: str, session:
     return row
 
 
-def download_jobs_departments(data_dir, url_base, make_csv, test_mode, n):
+def download_jobs_departments(data_dir, url_base, make_csv, n):
 
     df_department = pd.read_parquet(osp.join(data_dir, "departments.parquet"))
     df_jobs = pd.read_parquet(osp.join(data_dir, "jobs.parquet"))
     df_cross = df_jobs.merge(df_department, how='cross')[["romeCode", "department_id"]]
 
     print(f"Retrieving job department attributes from {url_base}/*/labourMarket?territory=*")
-    if test_mode:
-        #On selectionne n lignes aux hasard pour les tests
-        df_cross_test = df_cross.sample(n=n, random_state=42)
     
     if make_csv:
         csv_path = osp.join(data_dir, "jobs_departments.csv")
     parquet_path = osp.join(data_dir, "jobs_departments.parquet")
     
-    total = len(df_cross_test) if test_mode else len(df_cross)
+    total = len(df_cross)
     print(f"Number of job-department pairs to process: {total}")
 
     results = {}
@@ -374,7 +386,7 @@ def download_jobs_departments(data_dir, url_base, make_csv, test_mode, n):
         with ThreadPoolExecutor(max_workers=10) as executor:
             future_to_code = {
                 executor.submit(fetch_job_department_attributes, code, department_id, session, url_base): code
-                for code, department_id in (df_cross_test.itertuples(index=False) if test_mode else df_cross.itertuples(index=False))
+                for code, department_id in df_cross.itertuples(index=False)
             }
 
             completed = 0
@@ -394,7 +406,7 @@ def download_jobs_departments(data_dir, url_base, make_csv, test_mode, n):
         "department_id": "string",
         "jobSeekers": "Int64",
         "jobOffers": "Int64",
-        "jobPeriod": "string",
+        "sourcePeriod": "string",
         "salaryq10": "Int64",
         "salaryq90": "Int64",
         "recruitementDifficultyScore": "Int64",
