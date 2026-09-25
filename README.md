@@ -71,7 +71,7 @@ You will notice that in some views the job offers and job seekers figures at nat
 This is because the views that allow territorial filters show, by default, the aggregated sum (job offers and job seekers) over all departments belonging to the applied territorial filters, whereas the views about national-level data are sourced directly from national-scale data. For example, for a specific job, the view "Job stats (national scale data)" won't give you the same job offers and job seekers values as the view "Job stats filtered by territory (highest)" with no territorial filter active, because the sum of the number of job offers across all departments (the smallest scale possible) is not equal to the number of job offers at national level given by MetierScope.
 
 
-## Setup for reproducing on your machine
+## Setup for reproducing
 0. Prerequisites:
 - GCP account: https://cloud.google.com/.
 The only resources this project uses are GCS and BigQuery, for a fairly small data volume (around 600 KiB), so they won't be very costly after the end of your free trial. **BUT BE VERY CAREFUL TO SECURE YOUR ACCOUNT AND NOT LEAK YOUR CREDENTIALS (especially your GCP JSON authentication key)**.
