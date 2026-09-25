@@ -3,11 +3,11 @@
 ## Introduction
 
 Did you ever wonder:
-- "What are the jobs with the highest number of position offers and the lowest number of applicants?"
-- "Or the opposite, to know which jobs to avoid?"
-- "Same questions but in some specific geographical zones?"
-- "Same questions again but about whole professional areas instead of specific jobs?"
-- "And most importantly: what are the best-paid and worst-paid jobs? And where?"
+- "What are the jobs with the highest number of position offers and the lowest number of applicants ?"
+- "Or the opposite, to know which jobs to avoid ?"
+- "Same questions but in some specific geographical zones ?"
+- "Same questions again but about whole professional areas instead of specific jobs ?"
+- "And most importantly: what are the best-paid and worst-paid jobs? And where ?"
 
 For the French job market, this data engineering project lets you answer these questions using the data displayed on the [MetierScope](https://candidat.francetravail.fr/metierscope/) site from France Travail. It consists of an ELT pipeline with:
 
@@ -16,7 +16,6 @@ For the French job market, this data engineering project lets you answer these q
 - Transformation with **dbt** into analytic tables, still in BigQuery.
 - The three previous steps **containerized** with **Docker** and **orchestrated** with **Airflow**.
 - To make this data useful for analysis, the mart tables are used as a source for a **Google Data Studio interactive dashboard**.
-
 
 Feel free to explore and use my dashboard here (you just need a Google account):
 
@@ -28,7 +27,7 @@ Or you can reproduce my project (but without the dashboard, I'm sorry) by clonin
 
 The interactive dashboard allows users to explore the French labour market at different geographical levels — national, regional and departmental — and according to different occupations or professional areas. The available filters make it possible to combine these dimensions to investigate a specific question.
 
-### What are you looking for?
+### What are you looking for ?
 
 The dashboard provides numerous views to help users analyze the French labour market from different perspectives. It follows this logical structure: each view displays information about one dimension of the job market (**jobs**, **professional areas** and **territories**), and most of them let you filter by another dimension. For example:
 
