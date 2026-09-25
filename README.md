@@ -19,6 +19,7 @@ For the French job market, this data engineering project lets you answer these q
 
 
 Feel free to explore and use my dashboard here (you just need a Google account):
+
 https://datastudio.google.com/reporting/e15e1f03-1387-4edc-8e77-1e4355736b54
 
 Or you can reproduce my project (but without the dashboard, I'm sorry) by cloning this repository and following the instructions in the *Setup* section below. For that you'll need a GCP account and to install Docker and Terraform on your machine.
