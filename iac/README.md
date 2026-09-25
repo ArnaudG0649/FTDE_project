@@ -11,7 +11,7 @@
 `iam.managed.disableServiceAccountKeyCreation` and `storage.uniformBucketLevelAccess` are inactive.
 4. In IAM & Admin/Identity & Access/Service Accounts, create a new service account (for exemple "FTDE-project-service-account"). Grant the same roles to this service account as the ones stated in step 2.
 5. Still in IAM & Admin/Identity & Access/Service Accounts, click on your new service account and go to Keys/Add key/Create a new key. You can chose json type. After creation the authentication keys will be downloaded on your computer by your browser.
-6. Put the json file in `config` folder and name it `gcp-service-account.json`. Be careful : this file must absolutely remain secret. You can move it in a more secured folder when you gcp is non necessary. This file is gitignored in `config` folder.
+6. Put the json file in `config` folder and name it `gcp-service-account.json`. Be careful : this file must absolutely remain secret. You can move it in a more secured folder when you don't need gcp. This file is gitignored in `config` folder.
 7. From now additional/different manipulations might be needed for windows. Install Google SDK : https://docs.cloud.google.com/sdk/docs/install-sdk#linux
 8. Set environnment variable : 
 ```shell

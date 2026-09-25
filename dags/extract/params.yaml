@@ -5,7 +5,6 @@ territories_dir: "dags/extract/territories"
 test_mode: True
 n: 3
 
-interests_url: "https://candidat.francetravail.fr/gw-metierscope/interests"
 jobs_alphabetical_url: "https://candidat.francetravail.fr/gw-metierscope/jobs/groupByFirstLetter"
 domains_url: "https://candidat.francetravail.fr/gw-metierscope/domains"
 domain_url: "https://candidat.francetravail.fr/gw-metierscope/domain"

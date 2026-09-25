@@ -143,8 +143,8 @@ def collect_jobs_subdomains(data_dir, make_csv):
 def fetch_job_attributes(rome_code: str, session: requests.Session, url_base) -> dict:
     """
     For one job retrieves job attributes from the two France Travail (Metierscope) APIs:
-    1. {url_base}/job/{romeCode} for transition indicators and employment statuses
-    2. {url_base}/job/{romeCode}/labourMarket?territory=FR for salaries and recruitment difficulty scores
+    1. {url_base}/{romeCode} for transition indicators and employment statuses
+    2. {url_base}/{romeCode}/labourMarket?territory=FR for salaries and recruitment difficulty scores
     """
     url_job = f"{url_base}/{rome_code}"
     url_market = f"{url_base}/{rome_code}/labourMarket?territory=FR"
