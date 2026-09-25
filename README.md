@@ -1,4 +1,4 @@
-# France travail MetierScope data project
+# French job market data project
 
 ## Introduction
 
@@ -17,11 +17,14 @@ For the French job market, this data engineering project lets you answer these q
 - The three previous steps **containerized** with **Docker** and **orchestrated** with **Airflow**.
 - To make this data useful for analysis, the mart tables are used as a source for a **Google Data Studio interactive dashboard**.
 
+<!-- ![](data_stack.png) -->
+<img src="data_stack.png" alt="data_stack" width="500"/>
+
 Feel free to explore and use my dashboard here (you just need a Google account):
 
 https://datastudio.google.com/reporting/e15e1f03-1387-4edc-8e77-1e4355736b54
 
-Or you can reproduce my project (but without the dashboard, I'm sorry) by cloning this repository and following the instructions in the *Setup* section below. For that you'll need a GCP account and to install Docker and Terraform on your machine.
+Or you can reproduce my project (but without the dashboard, I'm sorry) by cloning this repository and following the instructions in the *Setup for reproducing* section below. For that you'll need a GCP account and to install Docker and Terraform on your machine.
 
 ## Dashboard — User Guide
 
@@ -32,8 +35,8 @@ The interactive dashboard allows users to explore the French labour market at di
 The dashboard provides numerous views to help users analyze the French labour market from different perspectives. It follows this logical structure: each view displays information about one dimension of the job market (**jobs**, **professional areas** and **territories**), and most of them let you filter by another dimension. For example:
 
 - The first view, "Job Stats (national scale data)", displays national-level job statistics, i.e. it compares the data for multiple jobs.
-- The view "Job stats filtered by territory (highest values)" displays job statistics but with the ability to filter by specific territories.
-- The view "Departments stats filtered by job and region name" displays departmental-level job statistics with the ability to filter by specific jobs and regions.
+- The view "Job stats filtered by territory (highest values)" displays statistics about the jobs such a the previous one but with the ability to filter by specific territories.
+- The view "Departments stats filtered by job and region name" displays the statistics of departments (i.e it compares the data for multiple departments) with the ability to filter by specific jobs and regions.
 
 So it is recommended to focus on the name of the view to find the information you are looking for, as it usually indicates the main dimension and scope of the data presented.
 
