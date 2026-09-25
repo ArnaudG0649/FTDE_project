@@ -2,26 +2,26 @@
 
 ## Introduction
 
-Did you ever wonder : 
-- "What are the jobs with the most number of positions offers and the last number of applicants ?"
-- "The opposite, to know which job to avoid ?"
-- "Same questions but in some specific geographical zones ?"
-- "Same questions again but about whole professional areas instead of specific jobs"
-- "And the most important : what are the most paid and underpaid jobs ? And where ?" 
+Did you ever wonder:
+- "What are the jobs with the highest number of position offers and the lowest number of applicants?"
+- "Or the opposite, to know which jobs to avoid?"
+- "Same questions but in some specific geographical zones?"
+- "Same questions again but about whole professional areas instead of specific jobs?"
+- "And most importantly: what are the best-paid and worst-paid jobs? And where?"
 
-For the french job market, with this data engineering project you can answer to these questions on the basis of the data displayed on the [MetierScope](https://candidat.francetravail.fr/metierscope/) site from France Travail. It consists of an ELT pipeline with : 
+For the French job market, this data engineering project lets you answer these questions using the data displayed on the [MetierScope](https://candidat.francetravail.fr/metierscope/) site from France Travail. It consists of an ELT pipeline with:
 
-- Extraction of the readable public data in the France Travail MetierScope site with **python** code.
+- Extraction of the readable public data on the France Travail MetierScope site with **Python** code.
 - Loading into **Google Cloud Storage** and **BigQuery**.
-- Transformation with **dbt** into analytic tables still in BigQuery.
-- The three precedent steps **containerized** with **Docker** and **orchestrated** with **Airflow**.
-- To make this data useful for analysis the mart tables are used as source by a **Google Data Studio interactive dashboard**.
+- Transformation with **dbt** into analytic tables, still in BigQuery.
+- The three previous steps **containerized** with **Docker** and **orchestrated** with **Airflow**.
+- To make this data useful for analysis, the mart tables are used as a source for a **Google Data Studio interactive dashboard**.
 
 
-Feel free to explore and use my dashboard here (you just need a google account) : 
+Feel free to explore and use my dashboard here (you just need a Google account):
 https://datastudio.google.com/reporting/e15e1f03-1387-4edc-8e77-1e4355736b54
 
-Or you can reproduce my project (but without the dashboard I'm sorry) by cloning this repository and following the instructions in the *Setup* section below. For that you'll need a GCP account and to install Docker and Terraform on your machine.
+Or you can reproduce my project (but without the dashboard, I'm sorry) by cloning this repository and following the instructions in the *Setup* section below. For that you'll need a GCP account and to install Docker and Terraform on your machine.
 
 ## Dashboard — User Guide
 
@@ -29,13 +29,13 @@ The interactive dashboard allows users to explore the French labour market at di
 
 ### What are you looking for?
 
-The dashboard provides a lot of views to help users analyze the French labour market from different perspectives. It follows this logical structure: a view display information about a dimension of the the job market (**jobs**, **professional areas** and **territories**), and most of them come with the ability to filter by another dimension. For exemple : 
+The dashboard provides numerous views to help users analyze the French labour market from different perspectives. It follows this logical structure: each view displays information about one dimension of the job market (**jobs**, **professional areas** and **territories**), and most of them let you filter by another dimension. For example:
 
-- The first view "Job Stats (national scale data)" display national-level job statistics i.e compares the data for multiple jobs.
+- The first view, "Job Stats (national scale data)", displays national-level job statistics, i.e. it compares the data for multiple jobs.
 - The view "Job stats filtered by territory (highest values)" displays job statistics but with the ability to filter by specific territories.
 - The view "Departments stats filtered by job and region name" displays departmental-level job statistics with the ability to filter by specific jobs and regions.
 
-So it is adviced to focus on the name of the view to find out the information you are looking for, as it usually indicates the main dimension and scope of the data presented.
+So it is recommended to focus on the name of the view to find the information you are looking for, as it usually indicates the main dimension and scope of the data presented.
 
 ### Key indicators
 
@@ -47,7 +47,7 @@ So it is adviced to focus on the name of the view to find out the information yo
 
 A ratio above 1 means that there are more offers than job seekers within the selected scope; a ratio below 1 indicates the opposite. This ratio should be interpreted together with the absolute volumes: a high ratio based on a very small number of offers does not necessarily represent a large labour market.
 
-**Recruitment difficulty** is an indicator of recruitment difficulty based on data from France Travail and DARES. It is presented on a **1-to-5 scale**:
+**Recruitment difficulty** is an indicator based on data from France Travail and DARES. It is presented on a **1-to-5 scale**:
 
 | Score | Interpretation |
 |---:|---|
@@ -57,41 +57,41 @@ A ratio above 1 means that there are more offers than job seekers within the sel
 | **4** | Difficult |
 | **5** | Very difficult |
 
-This is an indicator of **recruitment difficulty for companies**, rather than an individual probability of finding a job. A high value therefore means that finding a job is, on average, easier within the selected scope.
+This is an indicator of **recruitment difficulty for companies**, rather than an individual probability of finding a job. Since it measures how hard it is for companies to recruit, a high value means that candidates are scarce relative to demand, so finding a job is, on average, easier within the selected scope.
 
 ### Salaries
 
-The *Salary decile* views display the **10th and 90th salary quantiles**. They make it possible to observe the gap between a lower point and a higher point in the salary distribution for the selected occupation and geographical area.
+The *Salary decile* views display the **10th and 90th salary percentiles**. They make it possible to observe the gap between a lower point and a higher point in the salary distribution for the selected occupation and geographical area.
 
 These values should therefore not be interpreted as a minimum and maximum salary: they represent two points of the salary distribution.
 
 ### National vs territorial data
 
-You will notice that in some views the job offers and  seekers at national level isn't equal with exactly the same filters applied. 
-This is due to the fact that the views which allow you to use territorial filters or values show by default the aggregated sum (job offers and job seekers) over all departments belonging to the territorial filters applied, but the views about national-level data are fed with direct national scaled data sources. For exemple, for a specific job, the view "Job ​stats (national scale data)" won't give you the same job offers and job seekers values than the view "Job​ stats filtered by territory (highest)" with no territorial filter active because the sum of the number of job offers in all departments (smallest scale possible) isn't equal to the number of job offers at national level gived by MetierScope.   
+You will notice that in some views the job offers and job seekers figures at national level are not equal to those shown elsewhere with exactly the same filters applied.
+This is because the views that allow territorial filters show, by default, the aggregated sum (job offers and job seekers) over all departments belonging to the applied territorial filters, whereas the views about national-level data are sourced directly from national-scale data. For example, for a specific job, the view "Job stats (national scale data)" won't give you the same job offers and job seekers values as the view "Job stats filtered by territory (highest)" with no territorial filter active, because the sum of the number of job offers across all departments (the smallest scale possible) is not equal to the number of job offers at national level given by MetierScope.
 
 
-## Setup for reproducting in your machine
+## Setup for reproducing on your machine
 0. Prerequisites:
-- GCP account : https://cloud.google.com/. 
-The only ressources this project uses are GCS and BigQuery, for a not very large data volume (around 600 KiB) so they won't be very costly after the end of your free trial. **BUT BE VERY CAREFUL TO SECURISE YOUR ACCOUNT AND NOT LEAK YOUR CREDENTIALS (especially your GCP JSON authentication key)**.
-- Docker : https://www.docker.com/get-started
-- Terraform : https://www.terraform.io/downloads.html
-1. Clone the repository : 
+- GCP account: https://cloud.google.com/.
+The only resources this project uses are GCS and BigQuery, for a fairly small data volume (around 600 KiB), so they won't be very costly after the end of your free trial. **BUT BE VERY CAREFUL TO SECURE YOUR ACCOUNT AND NOT LEAK YOUR CREDENTIALS (especially your GCP JSON authentication key)**.
+- Docker: https://www.docker.com/get-started
+- Terraform: https://www.terraform.io/downloads.html
+1. Clone the repository:
 ```shell
 git clone git@github.com:ArnaudG0649/FTDE_project.git
 ```
-2. Go [here](iac/README.md) to know how to configure your gcp project, **get the json authentication key** and set up some necessary ressources with terraform.
-3. In `dags/extract/params.yams`, there is some important parameters. **You must insert your own gcp project id for the corresponding parameter (line 14)**. You can change some other parameters like `test_mode` that allow you to download the data only for `n` jobs, or `make_csv` that will put the data extracted in csv files in addition to the parquet files.
+2. Go [here](iac/README.md) to learn how to configure your GCP project, **get the JSON authentication key** and set up the necessary resources with Terraform.
+3. In `dags/extract/params.yaml`, there are some important parameters. **You must insert your own GCP project ID for the corresponding parameter (line 14)**. You can change other parameters such as `test_mode`, which lets you download data for only `n` jobs, or `make_csv`, which outputs the extracted data as CSV files in addition to the parquet files.
 4. Execute
 ```shell
 docker compose build 
 ```
-once and each time you want to open the airflow ui execute
+once, then each time you want to open the Airflow UI execute
 ```shell
 docker compose up -d
 ```
-, open http://localhost:8080/, enter *airflow* as both username and password and you can choose between `extract_load_transform`, `load_transform` and `transform` dags in `dags` tab. `extract_load_transform` is scheduled every month from the 1st of October 2026. I strongly advice to extract the France Travail data at a slow pace and to set `test_mode` to true as often you can do, because on this site if you **try to download too much their data they might stop to answer to your request and blacklist your IP** to avoid abuses (but don't worry the data you want to download is public).
+Open http://localhost:8080/, enter *airflow* as both username and password, and you can choose between the `extract_load_transform`, `load_transform` and `transform` DAGs in the `dags` tab. `extract_load_transform` is scheduled every month from the 1st of October 2026. I strongly advise extracting France Travail data at a slow pace and setting `test_mode` to `true` as often as possible, because if you try to download too much of their data, this site might stop responding to your requests and blacklist your IP to prevent abuse (don't worry though, the data you want to download is public).
 
 
 ## Data source and responsible use
@@ -109,9 +109,9 @@ For transparency and reproducibility, the extraction code accesses the following
 
 The extraction code sends standard HTTP GET requests to publicly accessible MetierScope resources. It does not authenticate, access personal accounts, or attempt to access restricted resources.
 
-The dataset collected for this project consists of aggregated labour-market statistics, such as counts of job offers and applications and salary ranges. It does not intentionally collect personal or nominative information about job seekers or employers.
+The dataset collected for this project consists of aggregated labour-market statistics, such as counts of job offers and applications and salary ranges. It does not intentionally collect personal or personally identifiable information about job seekers or employers.
 
-France Travail's current [General Terms of Use](https://www.francetravail.fr/informations/informations-legales-et-conditio/conditions-generales-dutilisatio.html) state, subject to applicable third-party intellectual-property rights, that other contents may constitute public information that can be freely reused subject to the Open Licence for the reuse of public information. The French Code on relations between the public and the public administration also provides a framework for the reuse of public information. Reuse remains subject to the applicable legal and licensing conditions.
+France Travail's current [General Terms of Use](https://www.francetravail.fr/informations/informations-legales-et-conditio/conditions-generales-dutilisatio.html) state, subject to applicable third-party intellectual-property rights, that other content may constitute public information that can be freely reused subject to the Open Licence for the reuse of public information. The French Code on relations between the public and the public administration also provides a framework for the reuse of public information. Reuse remains subject to the applicable legal and licensing conditions.
 
 For this reason, this project follows the following principles:
 
