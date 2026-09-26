@@ -24,7 +24,7 @@ Feel free to explore and use my dashboard here:
 
 https://datastudio.google.com/reporting/e15e1f03-1387-4edc-8e77-1e4355736b54
 
-Or you can reproduce my project (but without the dashboard, I'm sorry) by cloning this repository and following the instructions in the *Setup for reproducing* section below. For that you'll need a GCP account and Docker and Terraform on your machine.
+Or you can reproduce my project (but without the dashboard, I'm sorry) by cloning this repository and following the instructions in the *Setup for reproducing* section below. For that you'll need a GCP account and Docker and Terraform installed on your machine.
 
 ## Dashboard — User Guide
 
