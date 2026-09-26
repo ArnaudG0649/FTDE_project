@@ -1,6 +1,7 @@
 def extract(config_file="dags/extract/params.yaml") : 
 
     import yaml
+    import os
     import os.path as osp
     from extract.extract_utils import (
         csv_to_parquet,
@@ -28,6 +29,9 @@ def extract(config_file="dags/extract/params.yaml") :
     domains_url = yaml_data["domains_url"]
     domain_url = yaml_data["domain_url"]
     url_job = yaml_data["url_job"]
+
+    if not osp.exists(data_dir):
+        os.makedirs(data_dir)
 
     # Perform the data extraction steps
     csv_to_parquet(territories_dir, data_dir)

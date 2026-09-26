@@ -80,13 +80,13 @@ x-airflow-common:
   
     
   volumes:
-    - /home/arnaudg0649/Desktop/FTDE_project/dags:/opt/airflow/dags
-    - /home/arnaudg0649/Desktop/FTDE_project/logs:/opt/airflow/logs
-    - /home/arnaudg0649/Desktop/FTDE_project/config:/opt/airflow/config
-    - /home/arnaudg0649/Desktop/FTDE_project/plugins:/opt/airflow/plugins
-    - /home/arnaudg0649/Desktop/FTDE_project/FT_data_transform:/opt/airflow/FT_data_transform
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./config:/opt/airflow/config
+    - ./plugins:/opt/airflow/plugins
+    - ./FT_data_transform:/opt/airflow/FT_data_transform
 
-  # - /home/arnaudg0649/Desktop/FTDE_project/.venv:/opt/airflow/.venv
+  # - ./.venv:/opt/airflow/.venv
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on

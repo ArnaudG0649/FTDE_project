@@ -4,7 +4,7 @@ prompt.txt
 config/*.json
 config/private
 
-dags/extract/data
+dags/extract/data/*
 dags/mytuto_dag.py
 dags/extract_dag.py
 dags/extracttuto
@@ -14,6 +14,6 @@ iac/terraform.tfstate
 iac/terraform.tfstate.backup
 iac/.terraform
 
-logs
+logs/*
 
 todo.txt
