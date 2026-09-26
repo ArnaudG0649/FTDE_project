@@ -77,7 +77,7 @@ This is because the views that allow territorial filters show, by default, the a
 ## Setup for reproducing
 0. Prerequisites:
 - GCP account: https://cloud.google.com/.
-The only resources this project uses are GCS and BigQuery, for a fairly small data volume (around 600 KiB), so they won't be very costly after the end of your free trial. **BUT BE VERY CAREFUL TO SECURE YOUR ACCOUNT AND NOT LEAK YOUR CREDENTIALS (especially your GCP JSON authentication key)**.
+The only resources this project uses are GCS and BigQuery, for a fairly small data volume (around 600 ko for the parquet files, and less than 50 Mo for the datasets in BigQuery), so they won't be very costly after the end of your free trial. **BUT BE VERY CAREFUL TO SECURE YOUR ACCOUNT AND NOT LEAK YOUR CREDENTIALS (especially your GCP JSON authentication key)**.
 - Docker: https://www.docker.com/get-started
 - Terraform: https://www.terraform.io/downloads.html
 1. Clone the repository:
