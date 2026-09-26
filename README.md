@@ -35,7 +35,7 @@ The interactive dashboard allows users to explore the French labour market at di
 The dashboard provides numerous views to help users analyze the French labour market from different perspectives. It follows this logical structure: each view displays information about one dimension of the job market (**jobs**, **professional areas** and **territories**), and most of them let you filter by another dimension. For example:
 
 - The first view, "Job Stats (national scale data)", displays national-level job statistics, i.e. it compares the data for multiple jobs.
-- The view "Job stats filtered by territory (highest values)" displays statistics about the jobs such a the previous one but with the ability to filter by specific territories.
+- The view "Job stats filtered by territory (highest values)" displays statistics about the jobs such as the previous one but with the ability to filter by specific territories.
 - The view "Departments stats filtered by job and region name" displays the statistics of departments (i.e it compares the data for multiple departments) with the ability to filter by specific jobs and regions.
 
 So it is recommended to focus on the name of the view to find the information you are looking for, as it usually indicates the main dimension and scope of the data presented.
