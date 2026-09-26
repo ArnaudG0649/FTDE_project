@@ -24,7 +24,7 @@ Feel free to explore and use my dashboard here:
 
 https://datastudio.google.com/reporting/e15e1f03-1387-4edc-8e77-1e4355736b54
 
-Or you can reproduce my project (but without the dashboard, I'm sorry) by cloning this repository and following the instructions in the *Setup for reproducing* section below. For that you'll need a GCP account and to install Docker and Terraform on your machine.
+Or you can reproduce my project (but without the dashboard, I'm sorry) by cloning this repository and following the instructions in the *Setup for reproducing* section below. For that you'll need a GCP account and Docker and Terraform on your machine.
 
 ## Dashboard — User Guide
 
@@ -101,7 +101,7 @@ Open http://localhost:8080/, enter *airflow* as both username and password, and 
 
 The data used in this project comes from [MetierScope](https://candidat.francetravail.fr/metierscope/), a public service provided by France Travail (formerly Pôle emploi), the French public employment service. MetierScope provides information and statistics about occupations and the labour market, including indicators such as job offers, applications and salary ranges.
 
-For transparency and reproducibility, the extraction code accesses the following publicly reachable MetierScope endpoints. The identifiers in the URL patterns correspond to resources exposed by the application:
+For transparency and reproducibility, the extraction code accesses the following publicly reachable MetierScope endpoints. The identifiers ({domain_code}, {rome_code} and {dept_code}) in the URL patterns below correspond to data keys that the extraction program iterates over:
 
 - https://candidat.francetravail.fr/gw-metierscope/jobs/groupByFirstLetter
 - https://candidat.francetravail.fr/gw-metierscope/domains
