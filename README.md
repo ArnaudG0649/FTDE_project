@@ -20,7 +20,7 @@ For the French job market, this data engineering project lets you answer these q
 <!-- ![](data_stack.png) -->
 <img src="data_stack.png" alt="data_stack" width="500"/>
 
-Feel free to explore and use my dashboard here (you just need a Google account):
+Feel free to explore and use my dashboard here:
 
 https://datastudio.google.com/reporting/e15e1f03-1387-4edc-8e77-1e4355736b54
 
